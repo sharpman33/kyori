@@ -10,16 +10,26 @@ body
 footer
 {
 	background-color: #d5eeff;
-	height: 15vh;
+	height: 100%;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
- 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%)	
+ 	 clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 100%);
+
+
 }
 
 header
 {
 	background-color: #d5eeff;
   	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
- 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%)	
+ 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);	
+}
+
+.title
+{
+	font-size: 3em;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 	.container
@@ -76,7 +86,7 @@ header
 
 	#game-projects
 	{
-		padding-top: 10%;
+		
 	}
 
 	#other-projects
@@ -94,7 +104,7 @@ header
 	.project-box-left .project-thumbnail
 	{
 		grid-area: thumbnail;
-		padding-left: 20%;
+		padding-left: 18%;
 	}
 
 	.project-box-left .project-info
@@ -114,6 +124,7 @@ header
 	.project-box-right .project-thumbnail
 	{
 		grid-area: thumbnailR;
+		padding-left: 18%;
 	}
 
 	.project-box-right .project-info
@@ -135,45 +146,103 @@ header
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "box1 box2 box3";
+		grid-template-areas: "sbox1 sbox2 sbox3";
 	}
 
 	.skill-box1
 	{
-		grid-area = box1;
-
+		grid-area = sbox1;
 	}
 
 	.skill-box2
 	{
-		grid-area = box2;
-
+		grid-area = sbox2;
 	}
 
 	.skill-box3
 	{
-		grid-area = box3;
-
+		grid-area = sbox3;
 	}
 
 	.skill-list
 	{
 		margin-left: 20%;
+		font-size: 1.2em;
 	}
 
 	.skill-title
 	{
-		font-size: 18pt;
+		font-size: 1.6em;
 		text-align: center;
 	}
 
 	.skill-sub-title
 	{
 		padding-top: 5%;
-		font-size: 15pt;
+		font-size: 1.4em;
 		text-align: center;
 		color: lightblue;
 		font-weight: bold;
 	}
 
+/* Contact Info*/
+	#contact-info
+	{
+		color: black;
+		padding-top: 7%;
+		padding-bottom: 3%;
+	}
 
+	.contact-boxes
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas: "cbox1 cbox2 cbox3 cbox4";
+	}
+
+	.contact-box1
+	{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(5, 1fr);
+		grid-area: cbox1;
+		text-align: center;
+	}
+
+	.contact-box2
+	{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(5, 1fr);
+		grid-area: cbox2;
+		text-align: center;
+	}
+
+	.contact-box3
+	{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(5, 1fr);
+		grid-area: cbox3;
+		text-align: center;
+	}
+
+	.contact-box4
+	{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(5, 1fr);
+		grid-area: cbox4;
+		text-align: center;
+	}
+
+	.contact-iconbox
+	{
+		grid-column: 2 / 2;
+	}
+
+	.contact-infobox
+	{
+		padding-top: 15%;
+		font-size: 14pt;
+	}
