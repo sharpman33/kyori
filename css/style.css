@@ -55,7 +55,6 @@ header
 		grid-area = about;
 		text-align: center;
 		padding-top: 30%;
-		padding-left: 10%;
 	}
 
 	.about-me p
@@ -74,7 +73,7 @@ header
 	{
 		grid-area = logo;
 		padding-top: 30%;
-		padding-left: 10%;
+		padding-left: 30%;
 	}
 
 
@@ -104,13 +103,14 @@ header
 	.project-box-left .project-thumbnail
 	{
 		grid-area: thumbnail;
-		padding-left: 18%;
+		
 	}
 
 	.project-box-left .project-info
 	{
 		grid-area: info;
-		padding-top: 5%;
+		padding-top: 0%;
+		padding-left: 25%;
 	}
 
 
@@ -124,15 +124,65 @@ header
 	.project-box-right .project-thumbnail
 	{
 		grid-area: thumbnailR;
-		padding-left: 18%;
+		padding: 0;
 	}
 
 	.project-box-right .project-info
 	{
 		grid-area: infoR;
-		padding-top: 5%;
+		padding-top: 0%;
 		padding-left: 25%;
 		text-align: left;
+	}
+
+	.project-title
+	{
+		font-size: 1.6em;
+	}
+
+	.project-roles-title
+	{
+		display:inline;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding-right: 1%;
+	}
+	.project-roles
+	{
+		display: inline;
+		padding-left: 1%;
+		padding-right: 1%;
+		font-style: italic;	
+	}
+	.project-tools
+	{
+		margin: 2% 0px 0px;
+		margin-right: 5px;
+		display: inline-block;
+		padding: 5px 10px;
+		width: auto;
+		background: white none repeat scroll 0% 0%;
+		color: black;
+		border-radius: 5px
+	}
+
+	.project-links
+	{
+		margin: 2% 0px 0px;
+		text-decoration: none;
+		display: inline-block;
+		width: auto;
+		padding: 5px 10px;
+		font-weight: bold;
+		color: white;
+		border-radius: 5px;
+		border: 1px solid white;
+		transition-duration: 0.4s
+	}
+
+	.project-links:hover
+	{	
+		background: grey none repeat scroll 0% 0%;
 	}
 	
 /*SKILLS */
