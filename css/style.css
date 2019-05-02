@@ -1,13 +1,16 @@
 @font-face
 {
-	font-family: "geosanslight";
-src: url(../font/GeosansLight.ttf);
+	font-family: "monopoly";
+	src: url(../fonts/AauxProRegular.ttf);
 }
 
 
 /* Global */
 	body
 	{
+		font-family: monopoly;
+		font-size: 12pt;
+
 		overflow-x :hidden;
 		padding: 0;
 		margin: 0;
@@ -225,7 +228,7 @@ src: url(../font/GeosansLight.ttf);
 	.project-date
 	{
 		font-size:1.2em;
-		color: lightgrey;
+		color: lightblue;
 		font-weight: bold;
 	}
 	
