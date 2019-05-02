@@ -1,37 +1,56 @@
-
-body
+@font-face
 {
-	overflow-x :hidden;
-	padding: 0;
-	margin: 0;
-	background-color: #2F4F4F;
-}	
-
-footer
-{
-	background-color: #d5eeff;
-	height: 100%;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
- 	 clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 100%);
-
-
+	font-family: "geosanslight";
+src: url(../font/GeosansLight.ttf);
 }
 
-header
-{
-	background-color: #d5eeff;
-  	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
- 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);	
-}
 
-.title
-{
-	font-size: 3em;
-	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
+/* Global */
+	body
+	{
+		overflow-x :hidden;
+		padding: 0;
+		margin: 0;
+		background-color: #2F4F4F;
+	}	
 
+	footer
+	{
+		background-color: #d5eeff;
+		height: 100%;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	 	 clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 100%);
+	}
+
+	header
+	{
+		background-color: #d5eeff;
+	  	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);	
+	}
+
+
+	#horizontal-line
+	{
+		align-content: center;
+		width: 80%;
+		height: 2px;
+		background-color: white;
+		margin: none;
+		padding: none;
+		margin-left: 10%;
+	}
+
+	.title
+	{
+		font-size: 3em;
+		text-align: center;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	
+/*Front Page*/
 	.container
 	{
 		width: 80%;
@@ -54,13 +73,14 @@ header
 	{
 		grid-area = about;
 		text-align: center;
-		padding-top: 30%;
+		padding-top: 45%;
 	}
 
 	.about-me p
 	{
 		width: 50%;
 		margin: auto;
+		font-size: 1.5em;
 	}
 
 	.about-me .name
@@ -72,12 +92,12 @@ header
 	.home-logo
 	{
 		grid-area = logo;
-		padding-top: 30%;
+		padding-top: 35%;
 		padding-left: 30%;
 	}
 
 
-/*asdasdasd*/
+/*Projects and Recent Works*/
 	#latest-works
 	{
 		color:white;
@@ -111,6 +131,7 @@ header
 		grid-area: info;
 		padding-top: 0%;
 		padding-left: 25%;
+		width: 80%;
 	}
 
 
@@ -124,31 +145,45 @@ header
 	.project-box-right .project-thumbnail
 	{
 		grid-area: thumbnailR;
-		padding: 0;
 	}
 
 	.project-box-right .project-info
 	{
+		width: 80%;
 		grid-area: infoR;
 		padding-top: 0%;
-		padding-left: 25%;
+		padding-left: 10%;
 		text-align: left;
 	}
 
 	.project-title
 	{
-		font-size: 1.6em;
+		font-size: 2em;
+	}
+
+	.project-subtitle
+	{
+		font-size: 1.5em;
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.project-detail
+	{
+		padding-left: 5%;
 	}
 
 	.project-roles-title
 	{
 		display:inline;
-		font-weight: bold;
-		font-size: 1.2em;
+
+		font-size: 1.3em;
 		padding-right: 1%;
 	}
 	.project-roles
 	{
+		font-weight: bold;
+		font-size: 1.3em;
 		display: inline;
 		padding-left: 1%;
 		padding-right: 1%;
@@ -156,19 +191,20 @@ header
 	}
 	.project-tools
 	{
-		margin: 2% 0px 0px;
+		margin: 3% 0px 0px;
 		margin-right: 5px;
 		display: inline-block;
 		padding: 5px 10px;
 		width: auto;
 		background: white none repeat scroll 0% 0%;
 		color: black;
-		border-radius: 5px
+		border-radius: 5px;
+		font-size: 1.2em;
 	}
 
 	.project-links
 	{
-		margin: 2% 0px 0px;
+		margin: 3% 0px 0px;
 		text-decoration: none;
 		display: inline-block;
 		width: auto;
@@ -177,12 +213,20 @@ header
 		color: white;
 		border-radius: 5px;
 		border: 1px solid white;
-		transition-duration: 0.4s
+		transition-duration: 0.4s;
+		font-size: 1.2em;
 	}
 
 	.project-links:hover
 	{	
 		background: grey none repeat scroll 0% 0%;
+	}
+
+	.project-date
+	{
+		font-size:1.2em;
+		color: lightgrey;
+		font-weight: bold;
 	}
 	
 /*SKILLS */
