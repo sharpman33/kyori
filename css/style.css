@@ -138,8 +138,7 @@
 	{
 		grid-area: info;
 		padding-top: 0%;
-		padding-left: 25%;
-		width: 80%;
+		padding-left: 15%;	
 	}
 
 
@@ -157,7 +156,7 @@
 
 	.project-box-right .project-info
 	{
-		width: 80%;
+		width: 85%;
 		grid-area: infoR;
 		padding-top: 0%;
 		padding-left: 10%;
@@ -166,18 +165,32 @@
 
 	.project-title
 	{
-		font-size: 2em;
+		padding: 0;
+		margin: 0;
+		font-size: 3em;
 	}
 
 	.project-subtitle
 	{
+		padding: 0;
+		margin: 0;
+		margin-top: 2%;
 		font-size: 1.5em;
 		padding: 0;
 		margin-bottom: 0;
 	}
 
+	.project-information
+	{
+		width: 90%;
+		text-align: justify;
+		margin-left: 5%;
+	}
+
 	.project-detail
 	{
+		width: 90%;
+		text-align: justify;
 		padding-left: 5%;
 	}
 
@@ -212,7 +225,7 @@
 
 	.project-links
 	{
-		margin: 3% 0px 0px;
+		margin: 2% 0px 0px;
 		text-decoration: none;
 		display: inline-block;
 		width: auto;
@@ -234,7 +247,7 @@
 	{
 		font-size:1.2em;
 		color: lightblue;
-		font-weight: bold;
+		font-style: italic;
 	}
 	
 /*SKILLS */
