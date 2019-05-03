@@ -115,6 +115,11 @@
 	{
 	}
 
+	.project-thumbnail img
+	{
+		border-radius: 20px;
+	}
+
 	.project-box-left
 	{
 		padding-bottom: 10%;
