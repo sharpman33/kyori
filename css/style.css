@@ -114,6 +114,20 @@
 
 	#other-projects
 	{
+		text-align: center;
+		font-size: 1.2em;
+		margin: 5%;
+	}
+
+	#other-projects a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	#other-projects a:hover
+	{
+		color: orange;
 	}
 
 	.project-thumbnail img
@@ -166,7 +180,7 @@
 
 	.project-title
 	{
-		color: orange;
+		color: white;
 		padding: 0;
 		margin: 0;
 		font-size: 3em;
@@ -180,7 +194,7 @@
 		font-size: 1.4em;
 		padding: 0;
 		margin-bottom: 0;
-		color: orange;
+		color: white;
 	}
 
 	.project-information
@@ -199,7 +213,7 @@
 
 	.project-roles-title
 	{
-		color: orange;
+		color: white;
 		display:inline;
 		font-size: 1.4em;
 		padding-right: 1%;
@@ -232,7 +246,7 @@
 		display: inline-block;
 		padding: 5px 10px;
 		width: auto;
-		background: white none repeat scroll 0% 0%;
+		background: orange none repeat scroll 0% 0%;
 		color: black;
 		border-radius: 5px;
 		font-size: 1.2em;
@@ -246,9 +260,9 @@
 		width: auto;
 		padding: 5px 10px;
 		font-weight: bold;
-		color: orange;
+		color: white;
 		border-radius: 5px;
-		border: 1px solid orange;
+		border: 1px solid white;
 		transition-duration: 0.4s;
 		font-size: 1.2em;
 	}
@@ -375,4 +389,11 @@
 	{
 		padding-top: 15%;
 		font-size: 14pt;
+		text-decoration: none;
+		color: blacks;
+	}
+
+	.contact-infobox:hover
+	{
+		color: orange;
 	}
