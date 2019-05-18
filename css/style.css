@@ -50,6 +50,7 @@
 		text-align: center;
 		padding-top: 5%;
 		padding-bottom: 5%;
+		color: orange;
 	}
 
 	
@@ -165,6 +166,7 @@
 
 	.project-title
 	{
+		color: orange;
 		padding: 0;
 		margin: 0;
 		font-size: 3em;
@@ -175,9 +177,10 @@
 		padding: 0;
 		margin: 0;
 		margin-top: 2%;
-		font-size: 1.5em;
+		font-size: 1.4em;
 		padding: 0;
 		margin-bottom: 0;
+		color: orange;
 	}
 
 	.project-information
@@ -196,20 +199,32 @@
 
 	.project-roles-title
 	{
+		color: orange;
 		display:inline;
-
-		font-size: 1.3em;
+		font-size: 1.4em;
 		padding-right: 1%;
 	}
 	.project-roles
 	{
 		font-weight: bold;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		display: inline;
+		text-align: justify-all
 		padding-left: 1%;
 		padding-right: 1%;
 		font-style: italic;	
 	}
+
+	.project-roles-divider
+	{
+		font-size: 1.2em;
+		display: inline;
+		text-align: justify-all
+		padding-left: 1%;
+		padding-right: 1%;
+			
+	}
+
 	.project-tools
 	{
 		margin: 3% 0px 0px;
@@ -231,9 +246,9 @@
 		width: auto;
 		padding: 5px 10px;
 		font-weight: bold;
-		color: white;
+		color: orange;
 		border-radius: 5px;
-		border: 1px solid white;
+		border: 1px solid orange;
 		transition-duration: 0.4s;
 		font-size: 1.2em;
 	}
@@ -246,7 +261,7 @@
 	.project-date
 	{
 		font-size:1.2em;
-		color: lightblue;
+		color: orange;
 		font-style: italic;
 	}
 	
@@ -296,7 +311,7 @@
 		padding-top: 5%;
 		font-size: 1.4em;
 		text-align: center;
-		color: lightblue;
+		color: orange;
 		font-weight: bold;
 	}
 
