@@ -1,3 +1,4 @@
+@import url("fontawesome-all.min.css");
 @font-face
 {
 	font-family: "monopoly";
@@ -5,395 +6,299 @@
 }
 
 
-/* Global */
-	body
-	{
-		font-family: monopoly;
-		font-size: 12pt;
+body
+{
+	font-family: monopoly;
+	font-size: 12pt;
+	overflow-x :hidden;
+	padding: 0;
+	margin: 0;
+	background-color: #24252a;
+}
 
-		overflow-x :hidden;
-		padding: 0;
-		margin: 0;
-		background-color: #2F4F4F;
-	}	
+header
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 15px 13%;
+	opacity: 0.7;
+}
 
-	footer
-	{
-		background-color: #d5eeff;
-		height: 100%;
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-	 	 clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 100%);
-	}
-
-	header
-	{
-		background-color: #d5eeff;
-	  	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-	 	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);	
-	}
+footer
+{
+	overflow: hidden;
+}
 
 
-	#horizontal-line
-	{
-		align-content: center;
-		width: 80%;
-		height: 2px;
-		background-color: white;
-		margin: none;
-		padding: none;
-		margin-left: 10%;
-	}
-
-	.title
-	{
-		font-size: 3em;
-		text-align: center;
-		padding-top: 5%;
-		padding-bottom: 5%;
-		color: orange;
-	}
-
-	
-/*Front Page*/
+/* GLOBAL */
 	.container
 	{
+		min-height: calc(70vh);
 		width: 80%;
 		overflow: hidden;
 		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}	
+	.role-button
+	{
+		margin: 3% 0px 0px;
+		margin-right: 0px;
+		display: inline-block;
+		padding: 5px 10px;
+		width: auto;
+		background: rgba(0, 136, 169, 1) none repeat scroll 0% 0%;
+		color: #24252a;
+		border-radius: 5px;
+		font-size: 0.6em;
+		align-items: center;
+	}
+
+
+
+/*		NAVIGATION BAR 		*/
+	.logo
+	{
+		cursor: pointer;
+		float: left;
 
 	}
 
-	.landing-page
+	.logo-text
 	{
-		height: 110vh;
-		width: 100%;
-
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "about logo"; 
+		font-size: 2em;
+		font-weight: 1000;
+		color: white;
+		padding: 0 0;
+		margin: 0 0;
+		margin-right: auto;
+		margin-left: 20px
 	}
 
-	.about-me
+	.nav-links
 	{
-		grid-area = about;
-		text-align: center;
-		padding-top: 45%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
 
-	.about-me p
+	.nav-links > li
+	{	
+		display: inline-block;	
+		font-size: 1.1em;
+		transition: all 0.3s ease 0s;
+	}
+
+	.nav-links > li > a
 	{
-		width: 50%;
+		border-radius: 50px;
+		background-color: rgba(0, 136, 169, 1);
+		margin: 0px 10px;
+		padding: 9px 25px;
+		color: white;
+		text-decoration: none;		
+	}
+
+	.nav-links > li:hover
+	{
+		opacity: 0.5;
+	}
+
+	.icons > ul > li
+	{
+		display: inline-block;
+		margin: 0px 10px;
+	}
+
+	.fab
+	{
+		transition: all 0.3s ease 0s;
+		color: white;
+		opacity: 0.5;
+		text-decoration: none;
+	}
+
+	.fab:hover
+	{
+		color: white;
+		opacity: 0.9;
+	}
+
+
+/* PAGE HEADER TITLE*/
+	.header-title
+	{
 		margin: auto;
+	}
+
+	.header-title > .title
+	{
+		color: white;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+
+/*		MAJOR GAMES		*/
+	.major-project
+	{
+		padding: none;
+		margin: none;
+		margin-bottom: 5%;
+
+	}
+
+	.major-project > .title-text
+	{
+		color: white;
 		font-size: 1.5em;
 	}
 
-	.about-me .name
+	.major-project > img
 	{
-		font-size: 3em;
-		margin-bottom: 2%;
-	}
-
-	.home-logo
-	{
-		grid-area = logo;
-		padding-top: 35%;
-		padding-left: 30%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 15px;
+		width: 1500px;
+		height: 300px;
 	}
 
 
-/*Projects and Recent Works*/
-	#latest-works
+/*		MINOR GAMES 	*/
+	.minor-project
 	{
-		color:white;
+		padding: none;
+		margin: none;
+		margin-bottom: 5%;
 	}
 
-	#game-projects
+	.minor-project > .two-row-box
 	{
-		
-	}
-
-	#other-projects
-	{
-		text-align: center;
-		font-size: 1.2em;
-		margin: 5%;
-	}
-
-	#other-projects a
-	{
-		text-decoration: none;
-		color: white;
-	}
-
-	#other-projects a:hover
-	{
-		color: orange;
-	}
-
-	.project-thumbnail img
-	{
-		border-radius: 20px;
-	}
-
-	.project-box-left
-	{
-		padding-bottom: 10%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "thumbnail info";
-	}
-
-	.project-box-left .project-thumbnail
-	{
-		grid-area: thumbnail;
-		
-	}
-
-	.project-box-left .project-info
-	{
-		grid-area: info;
-		padding-top: 0%;
-		padding-left: 15%;	
-	}
-
-
-	.project-box-right
-	{
-		padding-bottom: 10%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "infoR thumbnailR";
-	}
-	.project-box-right .project-thumbnail
-	{
-		grid-area: thumbnailR;
-	}
-
-	.project-box-right .project-info
-	{
-		width: 85%;
-		grid-area: infoR;
-		padding-top: 0%;
-		padding-left: 10%;
-		text-align: left;
-	}
-
-	.project-title
-	{
-		color: white;
-		padding: 0;
-		margin: 0;
-		font-size: 3em;
-	}
-
-	.project-subtitle
-	{
-		padding: 0;
-		margin: 0;
-		margin-top: 2%;
-		font-size: 1.4em;
-		padding: 0;
-		margin-bottom: 0;
-		color: white;
-	}
-
-	.project-information
-	{
-		width: 90%;
-		text-align: justify;
-		margin-left: 5%;
-	}
-
-	.project-detail
-	{
-		width: 90%;
-		text-align: justify;
-		padding-left: 5%;
-	}
-
-	.project-roles-title
-	{
-		color: white;
-		display:inline;
-		font-size: 1.4em;
-		padding-right: 1%;
-	}
-	.project-roles
-	{
-		font-weight: bold;
-		font-size: 1.2em;
-		display: inline;
-		text-align: justify-all
-		padding-left: 1%;
-		padding-right: 1%;
-		font-style: italic;	
-	}
-
-	.project-roles-divider
-	{
-		font-size: 1.2em;
-		display: inline;
-		text-align: justify-all
-		padding-left: 1%;
-		padding-right: 1%;
-			
-	}
-
-	.project-tools
-	{
-		margin: 3% 0px 0px;
-		margin-right: 5px;
+		width: 45.5%;
 		display: inline-block;
-		padding: 5px 10px;
-		width: auto;
-		background: orange none repeat scroll 0% 0%;
-		color: black;
-		border-radius: 5px;
-		font-size: 1.2em;
+		margin: 2%;
 	}
 
-	.project-links
+	.minor-project > .two-row-box > .title-text
 	{
-		margin: 2% 0px 0px;
-		text-decoration: none;
+		color: white;
+		font-size: 1.5em;
+	}
+
+	.minor-project > .two-row-box > img
+	{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 15px;
+		width: 710px;
+		height: auto;
+	}
+
+
+/*		OTHER PROJECTS	 	*/
+	.other-project > .title
+	{
+		color: white;
+		margin-top: 10%;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.other-project
+	{
+		padding: none;
+		margin: auto;
+	}
+
+	.other-project > .four-row-box
+	{
+		width: 20%;
 		display: inline-block;
-		width: auto;
-		padding: 5px 10px;
-		font-weight: bold;
-		color: white;
-		border-radius: 5px;
-		border: 1px solid white;
-		transition-duration: 0.4s;
-		font-size: 1.2em;
+		margin: 2%;
 	}
 
-	.project-links:hover
-	{	
-		background: grey none repeat scroll 0% 0%;
-	}
-
-	.project-date
-	{
-		font-size:1.2em;
-		color: orange;
-		font-style: italic;
-	}
-	
-/*SKILLS */
-	#skills
+	.other-project > .four-row-box > .title-text
 	{
 		color: white;
-		margin-bottom: 10%;
+		font-size: 1.5em;
 	}
 
-	.skill-boxes
+
+	.other-project > .four-row-box > img
 	{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "sbox1 sbox2 sbox3";
+		border-radius: 15px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 360px;
+		height: auto;
 	}
 
-	.skill-box1
+
+/* FILTER ITEMS */
+
+	.filter-box
 	{
-		grid-area = sbox1;
+		width: 20%;
+		margin: 2%;
+		display: none;
 	}
 
-	.skill-box2
+	.filter-box > .title-text
 	{
-		grid-area = sbox2;
+		color: white;
+		font-size: 1.5em;
 	}
 
-	.skill-box3
+	.filter-box > img
 	{
-		grid-area = sbox3;
+		border-radius: 15px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 360px;
+		height: auto;
 	}
 
-	.skill-list
+	.show
 	{
-		margin-left: 20%;
-		font-size: 1.2em;
+  		display: inline-block;
+	}	
+
+	.button
+	{
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: #f1f1f1;
+		cursor: pointer;
+		border-radius: 10px;
+		margin: 5px 5px;
+		transition: all 0.3s ease 0s;
 	}
 
-	.skill-title
+	.button:hover
 	{
-		font-size: 1.6em;
+		background-color: rgba(0, 136, 169, 1);
+		opacity: 0.6;
+		color: white;
+	}
+
+	.button.active
+	{
+		background-color: rgba(0, 136, 169, 1);
+		color: white;
+	}
+
+	#button-container
+	{
+		width: 37.1%;
+		margin: auto;
+	}
+
+
+/* FOOTER  */
+	footer
+	{
 		text-align: center;
+		color: white;
+		opacity: 0.5;
 	}
 
-	.skill-sub-title
-	{
-		padding-top: 5%;
-		font-size: 1.4em;
-		text-align: center;
-		color: orange;
-		font-weight: bold;
-	}
-
-/* Contact Info*/
-	#contact-info
-	{
-		color: black;
-		padding-top: 7%;
-		padding-bottom: 3%;
-	}
-
-	.contact-boxes
-	{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-areas: "cbox1 cbox2 cbox3 cbox4";
-	}
-
-	.contact-box1
-	{
-		display: grid;
-		grid-gap: 5px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-area: cbox1;
-		text-align: center;
-	}
-
-	.contact-box2
-	{
-		display: grid;
-		grid-gap: 5px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-area: cbox2;
-		text-align: center;
-	}
-
-	.contact-box3
-	{
-		display: grid;
-		grid-gap: 5px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-area: cbox3;
-		text-align: center;
-	}
-
-	.contact-box4
-	{
-		display: grid;
-		grid-gap: 5px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-area: cbox4;
-		text-align: center;
-	}
-
-	.contact-iconbox
-	{
-		grid-column: 2 / 2;
-	}
-
-	.contact-infobox
-	{
-		padding-top: 15%;
-		font-size: 14pt;
-		text-decoration: none;
-		color: blacks;
-	}
-
-	.contact-infobox:hover
-	{
-		color: orange;
-	}

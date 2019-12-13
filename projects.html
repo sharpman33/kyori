@@ -8,235 +8,156 @@
     <link rel="icon" type="image/ico" href="images/Logo.png"/>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/eb30a26603.js" crossorigin="anonymous"></script>
+
 </head>
+
+
 
 <body>
 	<header>
-		<div class = "container">
-			<div class = "landing-page">
-				<div class ="about-me">
-					<p class ="name">Projects Archive</p>
-					<p>This is a complilation of all my works from artworks, 3d models, to game projects</p>
-				</div>
-				<div class ="home-logo"><img src="images/Logo.png" width = "400" height = auto align = center></div>
-			</div>
+		<img class = logo src="projects/Logo.png" width = "50" height = auto alt="logo">
+		<p class= logo-text>TONY CHEN</p>
+		<div class = icons>
+			<ul>
+				<li><a href="index.html" class="fab fa-linkedin-in fa-2x" class = "label"></a></li>
+				<li><a href="index.html" class="fab fa-itch-io fa-2x" class = "label"></a></li>
+				<li><a href="index.html" class="fab fa-github fa-2x" class = "label"></a></li>
+			</ul>
 		</div>
+		<nav id="nav">	
+			<ul class = nav-links>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="download/resume.pdf" download target= "blank">Resume</a></li>
+			</ul>
+		</nav>
+		
 	</header>
-	
-<!--  Projects & Lastest Works -->
-	<div class = "container">		
-		<div id = "latest-works">
-			<div class = "title">Recent Works & Projects</div>
-			
 
-<!-- Saving Sprinkles -->			
-			<div id = "game-projects">
-				<div class = "project-box-left">
-					<div class = "project-thumbnail"><img src="images/savingsprinkles/savingsprinkles.gif" width = auto height = 500></div>
-					<div class ="project-info">
-						<p class = "project-title">Saving Sprinkles</p>
-						<p class = "project-information">Saving Sprinkles is a point and click adventure game. You must find and sacrifice precious memories in order to save your severely ill pet, Spinkles.</p>
-						<div>
-							<p class = "project-roles-title">Roles:</p>
-							<p class = "project-roles">Lead Designer</p>
-							<p class = "project-roles-divider"> | </p>
-							<p class = "project-roles">Programmer</p>
-							<p class = "project-roles-divider"> | </p>
-							<p class = "project-roles">Level Designer</p>
-						</div>
-						<p class = "project-subtitle">Project Takeaways</p>
-						<p class = "project-detail"> For this project, I had two main jobs, plan and program events and design the levels. In this project, I worked with raycast first the first time, which I used to check collision in order for events to work properly.</p>
-						<div>
-							<a class = "project-links" href ="https://kyori.itch.io/saving-sprinkles" target='_blank'>Itch.io</a>
-						</div>
-						<div>
-							<p class = "project-tools">Unity</p>
-							<p class = "project-tools">Microsoft Visual Studios</p>
-							<p class = "project-tools">C#</p>
-							<p class = "project-tools">Game Jam</p>
-						</div>
-						<div>
-							<p class = "project-date">February 24, 2019</p> 
-						</div>
-					</div>
-				</div>
-
-
-<!-- Spooky Conga -->
-				<div class = "project-box-right">
-					<div class = "project-thumbnail"><img src="images/spookyconga/spookyconga.png" width = auto height = 500></div>
-					<div class ="project-info">
-						<p class = "project-title">Spooky Conga</p>
-						<p class = "project-information">Spooky Conga is a snake like game where the play must create a conga line at a holloween party. Create a conga line of dancer and don't run into each other, or the partiers will leave the party.</p>
-						<div>
-							<p class = "project-roles-title">Roles:</p>
-							<p class = "project-roles">Lead Designer</p>
-							<p class = "project-roles">Programmer</p>
-							<p class = "project-roles">UI/UX Designer</p>
-						</div>
-						<p class = "project-subtitle">Project Takeaways</p>
-						<p class = "project-detail"> For this project, my main job was to design and program the core mecahnics of the game. Aside from that, I also worked on simple level layout as well as user interface.  </p>
-						<div>
-							<a class = "project-links" href ="https://kyori.itch.io/spooky-conga" target='_blank'>Itch.io</a>
-						</div>
-						<div>
-							<p class = "project-tools">Unity</p>
-							<p class = "project-tools">Microsoft Visual Studios</p>
-							<p class = "project-tools">C#</p>
-							<p class = "project-tools">Game Jam</p>
-						</div>
-						<div>
-							<p class = "project-date">October 28, 2018</p> 
-						</div>
-					</div>
-				</div>
-
-
-<!-- War on I4 -->
-				<div class = "project-box-left">
-					<div class = "project-thumbnail"><img src="images/waroni4/wari4.gif" width = "auto" height = 500></div>
-					<div class ="project-info">
-						<p class = "project-title">War on I4</p>
-						<p class = "project-information">War on I4 is the union between the classic snake game and capture the flag. You and a fellow competitor must cross over to each other's territory, collect your people, and bring them home to where they belong without your compeitor breaking your chain.</p>
-						<div>
-							<p class = "project-roles-title">Roles:</p>
-							<p class = "project-roles">Designer</p>
-						</div>
-						<p class = "project-subtitle">Project Takeaways</p>
-						<p class = "project-detail"> During this project, I interacted with Unity for the first time, I learned and got used to many things within the game engine. My main role for the project was to design, create, and program collectables. At first I couldn't get a hold of how the engine works, but eventually, it all came together and got everything working within 48 hours of the game jam.</p>
-						<div>
-							<a class = "project-links" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>Itch.io</a>
-						</div>
-						<div>
-							<p class = "project-tools">Unity</p>
-							<p class = "project-tools">Microsoft Visual Studios</p>
-							<p class = "project-tools">C#</p>
-							<p class = "project-tools">Game Jam</p>
-						</div>
-						<div>
-							<p class = "project-date">July 9, 2018</p> 
-						</div>
-					</div>
-				</div>
-
-
-
-<!-- Greed Temple -->
-				<div class = "project-box-right">
-					<div class = "project-thumbnail"><img src="images/greedtemple/titleart.png" width = "auto" height = 500></div>
-					<div class ="project-info">
-						<p class = "project-title">Greed Temple</p>
-						<p class = "project-information">Greed Temple is a interactive fiction game created over a span of 2 weeks. The player explores the temple in search for hidden treasure.</p>
-						<div>
-							<p class = "project-roles-title">Roles:</p>
-							<p class = "project-roles">Solo Project</p>
-						</div>
-						<p class = "project-subtitle">Project Takeaways</p>
-						<p class = "project-detail"> For this project, I used twine for the first time. During this project, I tried focusing more on art and narrative writing. Though narrative writing still seemed to be bit lacking after the project finalized, but I felt pretty good about the artworks that were produced.</p>
-						<div>
-							<a class = "project-links" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>Download</a>
-						</div>
-						<div>
-							<p class = "project-tools">Twine</p>
-							<p class = "project-tools">Adobe Photoshop</p>
-						</div>
-						<div>
-							<p class = "project-date">April 7, 2019</p> 
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-
-
-
-
-			<div id = "other-projects">
-				<a >View More Projects</a>
-			</div>	
-		</div>
-		<div id="horizontal-line"></div>
-	</div>
-
-<!-- Skills -->
 	<div class = "container">
-		<div id = "skills">
-			<div class = "title">Skills</div>
-			<div class = "skill-boxes">
-				<div class = "skill-box1">
-					<p class = "skill-title">Game Design</p>
-					<ul class = "skill-list">
-						<li>UI/UX Design</li>
-						<li>Gameplay Design</li>
-						<li>Prototyping</li>
-						<li>3D Modeling</li>
-						<li>Storyboarding</li>
-					</ul>
-					<p class = "skill-sub-title">Designer Tool Kit</p>
-					<ul class = "skill-list">					
-						<li>Adobe Suite</li>
-						<li>Substance Painter</li>
-						<li>Autodesk Maya</li>
-						<li>Unity Game Engine</li>
-					</ul>
-				</div>
-				<div class = "skill-box2">
-					<p class = "skill-title">Developer</p>
-					<ul class = "skill-list">
-						<li>C#</li>
-						<li>CSS</li>
-						<li>HTML</li>
-					</ul>
-					<p class = "skill-sub-title">Developer Tool Kit</p>
-					<ul class = "skill-list">					
-						<li>Sublime Text Editor</li>
-						<li>Atom Text Editor</li>
-						<li>Github</li>
-						<li>Microsoft Visual Studios</li>
-					</ul>
-				</div>
-				<div class = "skill-box3">
-					<p class = "skill-title">Other Skills</p>
-					<ul class = "skill-list">
-						<li>Leadership</li>
-						<li>Organization</li>
-					</ul>
-					<p class = "skill-sub-title">Tool Kit</p>
-					<ul class = "skill-list">					
-						<li>Microsoft Office</li>
-						<li>Google Suite</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<footer>
-		<div id = "contact-info">
-			<div class = "contact-boxes">
-				<div class = "contact-box1">
-					<div class = "contact-iconbox"><img src="images/inlogo.png" width = "50" height = auto align = right></div>
-					<a class = "contact-infobox" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>LinkedIn</a>
-				</div>
-				<div class = "contact-box2">
-					<div class = "contact-iconbox"><img src="images/itchlogo.png" width = "50" height = auto align = right></div>
-					<a class = "contact-infobox" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>Itch.io</a>
-				</div>
-				<div class = "contact-box3">
-					<div class = "contact-iconbox"><img src="images/aslogo.png" width = "50" height = auto align = right></div>
-					<a class = "contact-infobox" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>ArtStation</a>
-				</div>
-				<div class = "contact-box4">
-					<div class = "contact-iconbox"><img src="images/Logo.png" width = "50" height = auto align = right></div>
-					<a class = "contact-infobox" href ="https://ninedguy.itch.io/war-on-i4" target='_blank'>Resume</a>
+			<section class = header-title>
+				<p class = title>GAME DESIGN PORTFOLIO</p>
+			</section>
+
+
+		<!----- CHECK BOX FILTERS   -------->
+			<div id="button-container">
+				<button class="button active" onclick="filterSelection('all')"> Show all</button>
+				<button class="button" onclick="filterSelection('game')"> Games</button>
+				<button class="button" onclick="filterSelection('3d-art')"> 3D Models</button>
+				<button class="button" onclick="filterSelection('2d-art')"> Artworks</button>
+				<button class="button" onclick="filterSelection('prototypes')"> Prototypes</button>
+				<button class="button" onclick="filterSelection('other')"> Other</button>
+			</div>
+
+
+			<section class = filter-project>
+
+				<div class = "filter-box game">
+					<p class = title-text>Escape! The Labyrinth <span class = role-button>BOARD</span> </p>
+
+					<img src="projects/Escape_The_Labyrinth/images/title.png" align = center>
 				</div>
 
-			</div>
+				<div class = "filter-box 3d-art">
+					<p class = title-text>Thanos Head <span class = role-button>MUDBOX</span></p>
+					<img src="projects/Art/Thanos_Sculpt/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box game">
+					<p class = title-text>Galactic Hunt <span class = role-button>UNITY 2D</span> </p>
+
+					<img src="projects/Galactic_Hunt/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box other" >
+					<p class = title-text>Snowcloud Menu <span class = role-button>ILLUSTRATOR</span></p>
+					<img src="projects/Art/SnowCloud/SnowCloud_Menu/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box other" >
+					<p class = title-text>Snowcloud Logo <span class = role-button>ILLUSTRATOR</span></p>
+					<img src="projects/Art/SnowCloud/SnowCloud_Logo/images/title.png" align = center>
+				</div>
+
+
+				<div class = "filter-box game">
+					<p class = title-text>Luminous Adventure <span class = role-button>UNITY 2D</span> </p>
+
+					<img src="projects/Luminous_Adventure/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box game">
+					<p class = title-text>Greed Temple <span class = role-button>TWINE</span></p>
+
+					<img src="projects/Greed_Temple/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box game">
+					<p class = title-text>Saving Sprinkles <span class = role-button>UNITY 2D</span> </p>
+
+					<img src="projects/Saving_Sprinkles/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box 3d-art">
+					<p class = title-text>Sythe <span class = role-button>MAYA</span> <span class = role-button>SUBSTANCE PAINTER</span> </p>
+					<img src="projects/Art/Sythe/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box 3d-art">
+					<p class = title-text>Shield <span class = role-button>MAYA</span> <span class = role-button>SUBSTANCE PAINTER</span> </p>
+					<img src="projects/Art/Wooden_Shield/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box game">
+					<p class = title-text>Spooky Conga <span class = role-button>UNITY 2D</span> </p>
+
+					<img src="projects/Spooky_Conga/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box game">
+					<p class = title-text>War On I4 <span class = role-button>UNITY 2D</span> </p>
+
+					<img src="projects/War_On_I4/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box 2d-art">
+					<p class = title-text>Dyptich Art <span class = role-button>ACRYLIC PAINT</span> </p>
+					<img src="projects/Art/Diptych/images/title.png" align = center>
+				</div>
+
+				<div class = "filter-box 2d-art">
+					<p class = title-text>Initial Art <span class = role-button>ACRYLIC PAINT</span> </p>
+					<img src="projects/Art/Initial/images/title.png" align = center>
+				</div>
+			
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				
+			</section>
+
 		</div>
-	</footer>
+	
+
+	<footer >
+		<p>Design and Created by Tony Chen</p>
+	</footer>	
+	 
+
+
+	<script type="text/javascript" src="./css/main.js"></script>
 </body>
-
-
+	
 
 </html>
