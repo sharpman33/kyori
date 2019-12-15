@@ -155,7 +155,7 @@ footer
 		font-size: 1.5em;
 	}
 
-	.major-project > img
+	.major-project > a > img
 	{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 15px;
@@ -203,6 +203,18 @@ footer
 		border-radius: 15px;
 		width: 710px;
 		height: auto;
+	}
+
+	.minor-project > .two-row-box> .title-text > a
+	{
+		text-decoration: none;
+		color: white;
+		transition: all 0.3s ease 0s;
+	}
+
+	.minor-project > .two-row-box > .title-text > a:hover
+	{
+		opacity: 0.4;
 	}
 
 
@@ -266,6 +278,18 @@ footer
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		width: 360px;
 		height: auto;
+	}
+
+	.filter-box > .title-text > a
+	{
+		text-decoration: none;
+		color: white;
+		transition: all 0.3s ease 0s;
+	}
+
+	.filter-box > .title-text > a:hover
+	{
+		opacity: 0.4;
 	}
 
 	.show
