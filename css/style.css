@@ -144,6 +144,7 @@ footer
 /*		MAJOR GAMES		*/
 	.major-project
 	{
+		text-align: center;
 		padding: none;
 		margin: none;
 		margin-bottom: 5%;
@@ -151,6 +152,8 @@ footer
 
 	.major-project > .title-text
 	{
+		margin-left: 2%;
+		text-align: left;
 		color: white;
 		font-size: 1.5em;
 	}
@@ -159,8 +162,8 @@ footer
 	{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 15px;
-		width: 1500px;
-		height: 300px;
+		width: 96%;
+		height: auto;
 	}
 
 	.major-project > .title-text > a
@@ -179,6 +182,7 @@ footer
 /*		MINOR GAMES 	*/
 	.minor-project
 	{
+		text-align: center;
 		padding: none;
 		margin: none;
 		margin-bottom: 5%;
@@ -193,6 +197,7 @@ footer
 
 	.minor-project > .two-row-box > .title-text
 	{
+		text-align: left;
 		color: white;
 		font-size: 1.5em;
 	}
@@ -201,12 +206,12 @@ footer
 	{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 15px;
-		width: 710px;
+		width: 100%;
 		height: auto;
 	}
 
 	.minor-project > .two-row-box> .title-text > a
-	{
+	{		
 		text-decoration: none;
 		color: white;
 		transition: all 0.3s ease 0s;
@@ -230,6 +235,7 @@ footer
 
 	.other-project
 	{
+		text-align: center;
 		padding: none;
 		margin: auto;
 	}
@@ -243,6 +249,7 @@ footer
 
 	.other-project > .four-row-box > .title-text
 	{
+		text-align: left;
 		color: white;
 		font-size: 1.5em;
 	}
@@ -252,22 +259,28 @@ footer
 	{
 		border-radius: 15px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		width: 360px;
+		width: 100%;
 		height: auto;
 	}
 
 
 /* FILTER ITEMS */
 
+	.filter-project
+	{
+		text-align: center;
+	}
+
 	.filter-box
 	{
-		width: 20%;
-		margin: 2%;
+		width: 31%;
+		margin: 1%;
 		display: none;
 	}
 
 	.filter-box > .title-text
 	{
+		text-align: left;
 		color: white;
 		font-size: 1.5em;
 	}
@@ -276,7 +289,7 @@ footer
 	{
 		border-radius: 15px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		width: 360px;
+		width: 100%;
 		height: auto;
 	}
 
@@ -306,6 +319,7 @@ footer
 		cursor: pointer;
 		border-radius: 10px;
 		margin: 5px 5px;
+		align-content: center;
 		transition: all 0.3s ease 0s;
 	}
 
@@ -324,9 +338,11 @@ footer
 
 	#button-container
 	{
-		width: 37.1%;
+		text-align: center;
+		width: 100%;
 		margin: auto;
 	}
+
 
 
 /* FEATURE PAGE */
@@ -340,8 +356,8 @@ footer
 	{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 15px;
-		width: 1500px;
-		height: 300px;
+		width: 100%;
+		height: auto;
 	}
 
 	.feature-title
@@ -399,11 +415,16 @@ footer
 		opacity: 0.5;
 	}
 
+	.feature-section > .feature-section-imgbox
+	{
+		text-align: center;
+	}
+
 	.feature-section img
 	{
 		padding: none;
 		margin: 20px 10px;
-		width: 480px;
+		width: 90%;
 		height: auto;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
