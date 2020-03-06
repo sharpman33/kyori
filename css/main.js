@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("game")
 
 function filterSelection(c) 
 {
