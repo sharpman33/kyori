@@ -14,7 +14,7 @@ body
 	padding: 0;
 	margin: 0;
 	background-color: #24252a;
-	height: 100vw;
+	height:auto;
 }
 
 header
@@ -478,11 +478,6 @@ footer
 
 @media only screen and (min-width: 0px) and (max-width: 1200px)
 {
-	body
-	{
-		margin: 0;
-		padding: 0;
-	}
 
 	#nav
 	{
@@ -584,27 +579,24 @@ footer
 		position:absolute;
 		top: -40px;
 		right:-50px;
+
+
+		height:100vh;
 	}
 
 	.nav-links
 	{
-		position: sticky;
 
 	  width: 200px;
-	  margin: 0px 0px 0px 0px;
+	  margin: 0;
 	  padding: 50px;
 		padding-left: 40px;
+		height: 89%;
 		background-color: #393a3f;
-	  padding-bottom: 120vw;
-
-		box-shadow: 200px;
 	  list-style-type: none;
 	  -webkit-font-smoothing: antialiased;
 
-	  transform-origin: 0% 0%;
-
 	  transition: opacity 0.3s ease-in-out;
-
 	}
 
 	#nav li
@@ -633,11 +625,4 @@ footer
 		opacity: 1;
 		position:relative;
 	}
-
-	.container
-	{
-		overflow-x: hidden;
-	}
-
-
 }
