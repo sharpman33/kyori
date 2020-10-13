@@ -123,6 +123,8 @@ footer
 		display: inline-block;
 		margin: 0px 10px;
 		position: absolute;
+		top:0;
+		left:0;
 		opacity:0;
 		pointer-events:none;
 	}
@@ -617,6 +619,9 @@ footer
 
 	.icons > ul > li
 	{
+		position:absolute;
+		top:0;
+		left: 0;
 		display: inline-block;
 		margin: 0px 10px;
 		opacity: 0;
@@ -636,4 +641,10 @@ footer
 	{
 		width: 100%;
 	}
+
+	.container
+	{
+		width:95%;
+	}
+
 }
