@@ -295,7 +295,7 @@ footer
 
 	.filter-box
 	{
-		width: 31%;
+		width: 30%;
 		margin: 1%;
 		display: none;
 	}
@@ -579,32 +579,37 @@ footer
 		position:absolute;
 		top: -40px;
 		right:-50px;
-
-
+		transition: opacity 0.3s ease-in-out;
 		height:100vh;
+
 	}
 
 	.nav-links
 	{
-
-	  width: 200px;
+		width: 200px;
 	  margin: 0;
 	  padding: 50px;
+		padding-top: 100px;
 		padding-left: 40px;
 		height: 89%;
 		background-color: #393a3f;
 	  list-style-type: none;
 	  -webkit-font-smoothing: antialiased;
-
-	  transition: opacity 0.3s ease-in-out;
 	}
 
 	#nav li
 	{
+			width: 100%;
 			padding: 10px 0;
 			padding-bottom: 30px;
 			font-size: 22px;
 	}
+
+	.nav-links > li > a
+	{
+		width: 100%;
+	}
+
 	#nav input:checked ~ul
 	{
 		transform: none;
@@ -621,8 +626,14 @@ footer
 	.hamburger-icons > ul > li
 	{
 		display: inline-block;
-		margin: 0px 10px;
+		margin: 0px 0px;
 		opacity: 1;
 		position:relative;
+		pointer-events: all;
+	}
+
+	.filter-box
+	{
+		width: 100%;
 	}
 }
