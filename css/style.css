@@ -18,7 +18,7 @@ body
 
 header
 {
-	background-color: #24252a;
+	background-color: rgba(36,37,42,0.8);
 	position: sticky;
 	top: 0px;
 	display: flex;
@@ -433,6 +433,12 @@ footer
 		text-align: center;
 	}
 
+
+	.feature-section iframe
+	{
+			border-radius: 10px;
+	}
+
 	.feature-section img
 	{
 		padding: none;
@@ -442,7 +448,7 @@ footer
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
-	
+
 /* FOOTER  */
 	footer
 	{
