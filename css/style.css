@@ -98,6 +98,7 @@ footer
 
 	.nav-links > li
 	{
+		margin-top: 7%;
 		display: inline-block;
 		font-size: 1.1em;
 		transition: all 0.3s ease 0s;
@@ -122,11 +123,7 @@ footer
 	{
 		display: inline-block;
 		margin: 0px 10px;
-		position: absolute;
-		top:0;
-		left:0;
 		opacity:0;
-		pointer-events:none;
 	}
 
 	.icons > ul > li
@@ -452,12 +449,8 @@ footer
 	.feature-section > .feature-section-imgbox
 	{
 		text-align: center;
-	}
-
-
-	.feature-section iframe
-	{
-			border-radius: 10px;
+		width: 90%;
+		margin: auto;
 	}
 
 	.feature-section img
@@ -468,6 +461,15 @@ footer
 		height: auto;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	.feature-section iframe
+	{
+			border-radius: 10px;
+			width: 90%;
+			height: 43.5vw;
+			overflow: hidden;
 	}
 
 /* FOOTER  */
@@ -509,7 +511,6 @@ footer
 	  position: absolute;
 	  top: -7px;
 	  left: -5px;
-
 	  cursor: pointer;
 
 	  opacity: 0;
@@ -567,7 +568,7 @@ footer
 	#nav > input:checked ~ .nav-link-holder
 	{
 	  opacity: 1;
-		pointer-events: all;
+		pointer-events: auto;
 	}
 
 	#nav > input ~ .nav-link-holder
@@ -583,7 +584,6 @@ footer
 		right:-50px;
 		transition: opacity 0.3s ease-in-out;
 		height:100vh;
-
 	}
 
 	.nav-links
@@ -612,10 +612,7 @@ footer
 		width: 100%;
 	}
 
-	#nav input:checked ~ul
-	{
-		transform: none;
-	}
+
 
 	.icons > ul > li
 	{
@@ -634,7 +631,6 @@ footer
 		margin: 0px 0px;
 		opacity: 1;
 		position:relative;
-		pointer-events: all;
 	}
 
 	.filter-box
