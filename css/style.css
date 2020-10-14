@@ -404,11 +404,11 @@ footer
 	.feature-date
 	{
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		color: white;
-		opacity: 0.4;
-		shape-margin: all;
+		opacity: 1;
 		margin-bottom: 5%;
+		font-style: italic;
 	}
 
 	.feature-section
@@ -419,6 +419,7 @@ footer
 	.feature-info-title
 	{
 		font-size: 1.5em;
+		margin:0;
 		color: white;
 	}
 
@@ -477,11 +478,24 @@ footer
 	{
 		text-align: center;
 		color: white;
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 @media only screen and (min-width: 0px) and (max-width: 1200px)
 {
+	.feature-info-detail
+	{
+		line-height: 1em;
+		padding-left: 20px;
+		color: white;
+		font-size: 1em;
+		text-align: justify;
+	}
+
+	.feature-section
+	{
+		margin-bottom: 10%;
+	}
 
 	#nav
 	{
@@ -490,7 +504,7 @@ footer
 		top: 35px;
 		right: 50px;
 
-		z-index: 1;
+		z-index: 2;
 
 	 -webkit-user-select: none;
 	 user-select: none;
@@ -514,7 +528,7 @@ footer
 	  cursor: pointer;
 
 	  opacity: 0;
-	  z-index: 2;
+	  z-index: 5;
 
 	  -webkit-touch-callout: none;
 	}
@@ -529,7 +543,7 @@ footer
 		background: #cdcdcd;
 		border-radius: 3px;
 
-		z-index: 1;
+		z-index: 2;
 
 		transform-origin: 4px 0px;
 
