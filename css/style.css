@@ -447,8 +447,27 @@ footer
 		opacity: 0.5;
 	}
 
+	.feature-section > .feature-section-caption
+	{
+		padding-top: 3%;
+		padding-bottom: 2%;
+		text-align: center;
+		width: 90%;
+		margin:auto;
+
+	}
+	.feature-section > .feature-section-caption > p
+	{
+		padding-top: 0%;
+		text-align: center;
+		margin:auto;
+		font-style:italic;
+
+	}
+
 	.feature-section > .feature-section-imgbox
 	{
+		padding-top: 2%;
 		text-align: center;
 		width: 90%;
 		margin: auto;
