@@ -502,6 +502,8 @@ footer
 			overflow: hidden;
 	}
 
+	
+
 /* FOOTER  */
 	footer
 	{
@@ -513,31 +515,33 @@ footer
 
 	.slideshowcontainer
 	{
+		margin:auto;
 		z-index: 1;
 		width: 80%;
 		position: relative;
-		margin: auto;
 	}
 
-	.slideshow, .slideshow2
+	.slideshow
 	{
+		margin-top: 1em;
 		display: none;
 	}
 
-	.slideshow img, .slideshow2 img
+	.slideshow img
 	{
+		margin: auto;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.prev, .next
 	{
+		margin:auto;
 		cursor: pointer;
 		position: absolute;
-		top: 45%;
+		top: 37%;
 		width: auto;
-		padding: 15px;
-		margin-top: -50px;
+		padding: 10px;
 		color: white;
 		font-weight: bold;
 		border-radius: 0 3px 3px 0;
@@ -547,17 +551,24 @@ footer
 
 	.next
 	{
-		right: 0;
+		right: 0px;
 		border-radius: 3px 0 0 3px;
 	}
+
 
 	.prev:hover, .next:hover
 	{
 		background-color: rgba(0,0,0, 0.8);
 	}
 
+	.slideshowrow
+	{
+		padding:0;
+		margin: auto;
+	}
 	.slideshowrow:after
 	{
+
 		content:"";
 		display: table;
 		clear: both;
@@ -565,12 +576,13 @@ footer
 
 	.slideshowcol
 	{
-		padding: 0.8%;
+		padding-left: 0.6%;
+		padding-right: 0.6%;
 		float: left;
 		width: 15%;
 	}
 
-	.slideshowthumb, .slideshowthumb2
+	.slideshowthumb
 	{
 		opacity: 0.4;
 	}
@@ -587,10 +599,11 @@ footer
 		color:white;
 		font-style: italic;
 		font-size: 0.8em;
-		height: 30px;
+		height: 0.8em;
+		margin:auto;
 	}
 
-	.active, .slideshowthumb:hover, .slideshowthumb2:hover
+	.active, .slideshowthumb:hover
 	{
 		cursor: pointer;
 		opacity: 1;

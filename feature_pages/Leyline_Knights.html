@@ -46,65 +46,60 @@
 		</nav>
 	</header>
 
-		<div class = "container">
-			<section class = feature-banner>
-				<img src="../projects/Leyline_Knights/images/banner.png" align = center>
-			</section>
 
-			<p class = "feature-title">Leyline Knights</p>
-			<p class = "feature-date">September 2020 - Present</p>
+	<div class = "container">
+		<section class = feature-banner>
+			<img src="../projects/Leyline_Knights/images/banner.png" align = center>
+		</section>
 
-			<section class = feature-section>
-				<p class = "feature-info-title">Summary</p>
-				<p class = "feature-info-detail">Leyline Knights is a top-down 3D action roguelike game. Player controls a magic-wielding knight and climb the Great World Tree in search of powerful magic to help your sick sibling. Player battles through randomly ordered room encounters and acquire elemental upgrades to aid in their climb. </p>
-			</section>
+		<p class = "feature-title">Leyline Knights</p>
+		<p class = "feature-date">September 2020 - Present</p>
 
-			<section class = feature-section>
-				<p class = "feature-info-title">Format</p>
-				<p class = "feature-info-detail">Game Engine: Unreal Engine 4</p>
-				<p class = "feature-info-detail">Team Size: Sixteen</p>
-				<p class = "feature-info-detail">Development Time: 2 Semesters</p>
-			</section>
-<!--
-			<section class = feature-section>
-				<p class = "feature-info-title">Design Goals</p>
-				<p class = "feature-info-detail"></p>
-			</section>
--->
+		<section class = feature-section>
+			<p class = "feature-info-title">Summary</p>
+			<p class = "feature-info-detail">Leyline Knights is a top-down 3D action roguelike game. Player controls a magic-wielding knight and climb the Great World Tree in search of powerful magic to help your sick sibling. Player battles through randomly ordered room encounters and acquire elemental upgrades to aid in their climb. </p>
+		</section>
 
-			<section class = feature-section>
-				<p class = "feature-info-title">Roles</p>
-				<p class = "feature-info-detail">Tech Lead</p>
-				<p class = "feature-info-detail">Programmer</p>
-			</section>
+		<section class = feature-section>
+			<p class = "feature-info-title">Format</p>
+			<p class = "feature-info-detail">Game Engine: Unreal Engine 4</p>
+			<p class = "feature-info-detail">Team Size: Sixteen</p>
+			<p class = "feature-info-detail">Development Time: 2 Semesters</p>
+		</section>
 
-			<section class = feature-section>
-				<p class = "feature-info-title">Tasks</p>
-				<p class = "feature-info-detail"><a href=#enemyai>Enemy AI</a></p>
-				<p class = "feature-info-detail">Reward System</p>
-				<p class = "feature-info-detail">Level Generator</p>
-				<p class = "feature-info-detail">Achievement System</p>
 
-			</section>
+		<section class = feature-section>
+			<p class = "feature-info-title">Roles</p>
+			<p class = "feature-info-detail">Tech Lead</p>
+			<p class = "feature-info-detail">Programmer</p>
+		</section>
 
-			<section class = "feature-section">
-				<p class = "feature-info-title">Design</p>
-				<p class = "feature-info-detail"> As tech lead, I oversee all programming tasks and ensure that all tasks are working properly and easily integrated for designers to use.</p>
-			</section>
+		<section class = feature-section>
+			<p class = "feature-info-title">Tasks</p>
+			<p class = "feature-info-detail"><a href=#enemyai>Enemy AI</a></p>
+			<p class = "feature-info-detail">Reward System</p>
+			<p class = "feature-info-detail">Level Generator</p>
+			<p class = "feature-info-detail">Achievement System</p>
+
+		</section>
+
+		<section class = "feature-section">
+			<p class = "feature-info-title">Design</p>
+			<p class = "feature-info-detail"> As tech lead, I oversee all programming tasks and ensure that all tasks are working properly and easily integrated for designers to use.</p>
+		</section>
 
 <!--
-			<section class = "feature-section">
-				<p class = "feature-info-title">Downloads</p>
-				<p class = "feature-info-detail">Current Versions:
-					<a href="https://kyori.itch.io/hungry-for-burger" download target= "blank"class = "feature-downloads">Itch.io</a>
-				</p>
-			</section>
+		<section class = "feature-section">
+			<p class = "feature-info-title">Downloads</p>
+			<p class = "feature-info-detail">Current Versions:
+				<a href="https://kyori.itch.io/hungry-for-burger" download target= "blank"class = "feature-downloads">Itch.io</a>
+			</p>
+		</section>
 -->
-			<section class = feature-section>
-				<p class = "feature-info-title">Enemy AI</p>
-
-			</section>
-			<div class=slideshowcontainer id="enemyai">
+		<section id="enemyai" class ="feature-section">
+			<p class = "feature-info-title">Enemy AI</p>
+		
+			<div id="slideshow1" class="slideshowcontainer">
 				<div class="slideshow">
 					<img src="../projects/Leyline_Knights/images/production1.png" style="width:100%" alt="tutorial system">
 				</div>
@@ -124,34 +119,70 @@
 					<img src="../projects/Leyline_Knights/images/GIF_bossai.gif" style="width:100%">
 				</div>
 
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
 
 				<div class="captioncontainer">
-					<p id="caption"></p>
+					<p class="caption"></p>
 				</div>
 
 				<div class="slideshowrow">
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/production1.png"  onclick="currentSlide(1)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/production2.png"  onclick="currentSlide(2)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/production3.png"  onclick="currentSlide(3)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/production4.gif"  onclick="currentSlide(4)" style="width:100%" alt="Spirit Enemy AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production4.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Spirit Enemy AI during prototype phase">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/GIF_staffai.gif"  onclick="currentSlide(5)" style="width:100%" alt="Staff Enemy AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/GIF_staffai.gif"  onclick="currentSlide(5, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Staff Enemy AI during prototype phase">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Leyline_Knights/images/GIF_bossai.gif"  onclick="currentSlide(6)" style="width:100%" alt="Boss AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/GIF_bossai.gif"  onclick="currentSlide(6, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Boss AI during prototype phase">
 					</div>
 				</div>
+			</section>
 
+
+			<section class ="feature-section">
+			<p class = "feature-info-title">Prototype</p>
+		
+			<div id="slideshow2" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/gameplay1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/gameplay2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/gameplay3.png" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
+					</div>
+				</div>
+			</section>
+			
 
 	<script src="../css/slideshow.js"></script>
 </body>
