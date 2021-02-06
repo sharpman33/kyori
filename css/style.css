@@ -536,15 +536,14 @@ footer
 
 	.prev, .next
 	{
-		margin:auto;
 		cursor: pointer;
 		position: absolute;
-		top: 37%;
+		top: 35%;
 		width: auto;
 		padding: 10px;
 		color: white;
 		font-weight: bold;
-		border-radius: 0 3px 3px 0;
+		border-radius: 10px;
 		user-select: none;
 		-webkit-user-select: none;
 	}
@@ -552,7 +551,6 @@ footer
 	.next
 	{
 		right: 0px;
-		border-radius: 3px 0 0 3px;
 	}
 
 
@@ -623,6 +621,14 @@ footer
 	.feature-section
 	{
 		margin-bottom: 10%;
+	}
+
+	.feature-section iframe
+	{
+			border-radius: 10px;
+			width: 90%;
+			height: 40.2vw;
+			overflow: hidden;
 	}
 
 	#nav

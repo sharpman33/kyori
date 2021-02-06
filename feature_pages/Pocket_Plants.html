@@ -47,6 +47,11 @@
 	</header>
 
 		<div class = "container">
+			<section class="feature-section">
+				<div class = feature-section-imgbox>
+					<iframe src="https://www.youtube.com/embed/eKzCHkHFiNw" frameborder="0" allowfullscreen="allowfullscreen" scrolling = "no" ></iframe>
+				</div>
+			</section>
 			<section class = feature-banner>
 				<img src="../projects/Pocket_Plants/images/banner.png" align = center>
 			</section>
@@ -57,9 +62,6 @@
 			<section class = feature-section>
 				<p class = "feature-info-title">Summary</p>
 				<p class = "feature-info-detail"> Pocket Plants is a 3rd Person survival game that takes place on a planet overrun with invasive plants. While beautiful, these plants produce too much carbon dioxide to sustain other life on the planet. The player must gather plants and utilize propagation to save their suffocating ecosystem.</p>
-				<div class = feature-section-imgbox>
-					<iframe src="https://www.youtube.com/embed/eKzCHkHFiNw" frameborder="0" allowfullscreen="allowfullscreen" scrolling = "no" ></iframe>
-				</div>
 			</section>
 
 
@@ -79,84 +81,102 @@
 -->
 			<section class = feature-section>
 				<p class = "feature-info-title">Roles</p>
-				<p class = "feature-info-detail">Programmer: Programmed from plant functionality to wold completion system.</p>
+				<p class = "feature-info-detail">Programmer</p>
 			</section>
 
 			<section class = feature-section>
 				<p class = "feature-info-title">Tasks</p>
 				<p class = "feature-info-detail"><a href= #tutorialsystem>Tutorial System</a></p>
-				<p class = "feature-info-detail">Plant Info Persistant Save</p>
+				<p class = "feature-info-detail"><a href=#persistentsave>Persistant Save for plant data</a></p>
 				<p class = "feature-info-detail">Plant Growth and Interactions</p>
 				<p class = "feature-info-detail">Dialogue System</p>
 			</section>
 
-			<section class = "feature-section">
-				<p class = "feature-info-title">Design</p>
 
-				<div class = feature-section-caption>
-					<img src="../projects/Pocket_Plants/images/GIF_tutorial.gif" align = center>
-					<p class = "feature-info-detail"> Creating an interactive tutorial system helps player learn how to play the game as well as learning the narative behind the game </p>
-				</div>
-				<div class = feature-section-caption>
-					<img src="../projects/Pocket_Plants/images/GIF_timer.gif" align = center>
-					<p class = "feature-info-detail"> Ensuring that each level has its own complexity and requiring the player to complete the level within a time constraint adds another layer besides watering and leveling up the plants. Before each level was very linear and player can just water and level 1 or 2 plants to complete the level.</p>
-				</div>
-				<div class = feature-section-caption>
-					<img src="../projects/Pocket_Plants/images/production3.png" align = center>
-					<p class = "feature-info-detail"> Tutorial Dialogue System </p>
-				</div>
-				<div class = feature-section-caption>
-					<img src="../projects/Pocket_Plants/images/production4.png" align = center>
-					<p class = "feature-info-detail"> Plant leveling system</p>
-				</div>
+			<section id="persistentsave" class="feature-section">
+				<p class="feature-info-title">Design</p>
 
+				<div id="slideshow1" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/GIF_tutorial.gif" style="width:100%" alt="tutorial system">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/production3.png"  style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/production4.png" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/GIF_tutorial.gif"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="Creating an interactive tutorial system helps player learn how to play the game as well as learning the narative behind the game ">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/production3.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Tutorial Dialogue System">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/production4.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Plant leveling system">
+						</div>
+					</div>
+				</div>
 			</section>
+
+
 
 			<section class = "feature-section">
 				<p class = "feature-info-title">Downloads</p>
-				<p class = "feature-info-detail">Coming Soon:
+				<p class = "feature-info-detail">Available on:
 					<a download target= "blank"class = "feature-downloads">Steam</a>
 				</p>
 			</section>
 
+			<section id="tutorialsystem" class="feature-section">
+				<p class="feature-info-title">Tutorial System</p>
 
-			<div class=slideshowcontainer id="tutorialsystem">
-				<div class="slideshow">
-					<img src="../projects/Pocket_Plants/images/gameplay1.png" style="width:100%" alt="tutorial system">
-				</div>
-				<div class="slideshow">
-					<img src="../projects/Pocket_Plants/images/gameplay2.png"  style="width:100%">
-				</div>
-				<div class="slideshow">
-					<img src="../projects/Pocket_Plants/images/gameplay3.png" style="width:100%">
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-				<div class="captioncontainer">
-					<p id="caption"></p>
-				</div>
-
-				<div class="slideshowrow">
-					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay1.png"  onclick="currentSlide(1)" style="width:100%" alt="Tutorial System during alpha">
+				<div id="slideshow1" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/gameplay1.png" style="width:100%" alt="tutorial system">
 					</div>
-					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay2.png"  onclick="currentSlide(2)" style="width:100%" alt="Greenhouse area">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/gameplay2.png"  style="width:100%">
 					</div>
-					<div class="slideshowcol">
-						<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay3.png"  onclick="currentSlide(3)" style="width:100%" alt="Level 1 inside the fog">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/gameplay3.png" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay1.png"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="Level 1 Environment">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Greenhouse area">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/gameplay3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Level 1 inside the fog">
+						</div>
 					</div>
 				</div>
-
-			</div>
-
-		<script src="../css/slideshow.js"></script>
+			</section>
 
 	<footer >
 		<p>Design and Created by Tony Chen</p>
 	</footer>
+
+	<script src="../css/slideshow.js"></script>
 </body>
 
 
