@@ -500,6 +500,81 @@ footer
 		opacity: 1;
 	}
 
+
+	.slideshowcontainer
+	{
+		width: 80%;
+		position: relative;
+		margin: auto;
+	}
+
+	.slideshow
+	{
+		display: none;
+
+	}
+
+	.slideshow img
+	{
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.prev, .next
+	{
+		cursor: pointer;
+		position: absolute;
+		top: 45%;
+		width: auto;
+		padding: 15px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.next
+	{
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover
+	{
+		background-color: rgba(0,0,0, 0.8);
+	}
+
+	.slideshowrow:after
+	{
+		content:"";
+		display: table;
+		clear: both;
+	}
+
+	.slideshowcol
+	{
+		padding: 0.8%;
+		float: left;
+		width: 15%;
+	}
+
+	.slideshowthumb
+	{
+		opacity: 0.4;
+	}
+	.slideshowrow img
+	{
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.active, .slideshowthumb:hover
+	{
+		opacity: 1;
+	}
+
 @media only screen and (min-width: 0px) and (max-width: 1200px)
 {
 	.feature-info-detail

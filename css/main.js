@@ -1,12 +1,52 @@
 filterSelection("game")
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function filterSelection(c) 
+function plusSlides(n)
+{
+  showSlidesslideIndex(slideIndex += n);
+}
+
+function currentSlide(n)
+{
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n)
+{
+  var i;
+  var slides = document.getElementsByClassName("slideshow");
+  var dots = document.getElementsByClassName("slideshowthumb");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++)
+  {
+    slides[i].style.display = "all";
+  }
+
+  for (i = 0; i < dots.length; i++)
+  {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+
+
+
+
+
+function filterSelection(c)
 {
   var x, i;
   x = document.getElementsByClassName("filter-box");
   if (c == "all") c = "";
 
-  for (i = 0; i < x.length; i++) 
+  for (i = 0; i < x.length; i++)
   {
     RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
@@ -14,14 +54,14 @@ function filterSelection(c)
 }
 
 
-function AddClass(element, name) 
+function AddClass(element, name)
 {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) 
+  for (i = 0; i < arr2.length; i++)
   {
-    if (arr1.indexOf(arr2[i]) == -1) 
+    if (arr1.indexOf(arr2[i]) == -1)
     {
       element.className += " " + arr2[i];
     }
@@ -29,14 +69,14 @@ function AddClass(element, name)
 }
 
 
-function RemoveClass(element, name) 
+function RemoveClass(element, name)
 {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) 
+  for (i = 0; i < arr2.length; i++)
   {
-    while (arr1.indexOf(arr2[i]) > -1) 
+    while (arr1.indexOf(arr2[i]) > -1)
     {
       arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
@@ -44,13 +84,12 @@ function RemoveClass(element, name)
   element.className = arr1.join(" ");
 }
 
-
 var button_container = document.getElementById("button-container");
 var btns = button_container.getElementsByClassName("button");
-for (var i = 0; i < btns.length; i++) 
+for (var i = 0; i < btns.length; i++)
 {
-  btns[i].addEventListener("click", 
-  function() 
+  btns[i].addEventListener("click",
+  function()
   {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
