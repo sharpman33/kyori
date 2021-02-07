@@ -54,6 +54,13 @@
 
 
 		<div class = "container">
+			<section class="feature-section">
+				<div class = feature-section-imgbox>
+					<iframe src="https://www.youtube.com/embed/p-nphuCyNqI" frameborder="0" allowfullscreen="allowfullscreen" scrolling = "no" ></iframe>
+				</div>
+			</section>
+
+
 			<section class = feature-banner>
 				<img src="../projects/Furrmidable_Foes/images/banner.png" align = center>
 			</section>
@@ -101,16 +108,57 @@
 				</p>
 			</section>
 
-			<section class = "feature-section">
-				<div class = feature-section-imgbox>
-					<iframe src="https://www.youtube.com/embed/p-nphuCyNqI" frameborder="0" allowfullscreen="allowfullscreen" scrolling = "no" ></iframe>
-					<img src="../projects/Furrmidable_Foes/images/title.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay1.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay2.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay3.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay4.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay5.png" align = center>
-					<img src="../projects/Furrmidable_Foes/images/gameplay6.png" align = center>
+
+			<section class="feature-section">
+				<p class="feature-info-title">Gameplay</p>
+				<div id="slideshow1" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay1.png" style="width:100%"	>
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay2.png"  style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay3.png" style="width:100%"	>
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay4.png" style="width:100%" >
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay5.png"  style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Furrmidable_Foes/images/gameplay6.png" style="width:100%"	>
+					</div>
+
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay1.png"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay4.png"  onclick="currentSlide(4,this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay5.png"  onclick="currentSlide(5, this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Furrmidable_Foes/images/gameplay6.png"  onclick="currentSlide(6, this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -118,6 +166,9 @@
 	<footer >
 		<p>Design and Created by Tony Chen</p>
 	</footer>
+
+	<script src="../css/slideshow.js"></script>
+
 
 </body>
 

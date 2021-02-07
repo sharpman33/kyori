@@ -99,25 +99,26 @@
 -->
 		<section id="enemyai" class ="feature-section">
 			<p class = "feature-info-title">Enemy AI</p>
-		
+			<p class = "feature-info-detail">With a high amoung of enemies in the game, I worked with another programmer to create enemies. Though we both were new to behavior tree during the begining, I was able to learn quickly and able to help and collaborate with the other programmer to ensure high quality and optimized work. I first began by making sure that all enemies would have a well structured class inheritence so in the future, it would be much easier to work with.</p>
+			<p class = "feature-info-detail">Each basic enemy has two different tiers. Each tier of enemy has different abilities and some are casted under certain conditions. This was easily completed using Behavior trees and Blackboard. The most challenging portion is creating the boss. Though some Behavior tree tasks were reused, but majority of them were different. For the boss, since all abilities were chosen by chance, I wanted to create a task that would be reusable on each boss without hard setting the abilities. With all basic functions and behavior tree tasks set up, enemies down the line were much easier to make and were made at a faster rate.</p>
 			<div id="slideshow1" class="slideshowcontainer">
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/production1.png" style="width:100%" alt="tutorial system">
+					<img src="../projects/Leyline_Knights/images/enemyai1.png" style="width:100%" alt="tutorial system">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/production2.png"  style="width:100%">
+					<img src="../projects/Leyline_Knights/images/enemyai2.png"  style="width:100%">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/production3.png" style="width:100%">
+					<img src="../projects/Leyline_Knights/images/enemyai3.png" style="width:100%">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/production4.gif" style="width:100%">
+					<img src="../projects/Leyline_Knights/images/enemyaispirit.gif" style="width:100%">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/GIF_staffai.gif" style="width:100%">
+					<img src="../projects/Leyline_Knights/images/enemyaistaff.gif" style="width:100%">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/GIF_bossai.gif" style="width:100%">
+					<img src="../projects/Leyline_Knights/images/enemyaicandlekinboss.gif" style="width:100%">
 				</div>
 
 				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
@@ -129,39 +130,43 @@
 
 				<div class="slideshowrow">
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyai1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyai2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyai3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/production4.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Spirit Enemy AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyaispirit.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Spirit Enemy AI during prototype phase">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/GIF_staffai.gif"  onclick="currentSlide(5, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Staff Enemy AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyaistaff.gif"  onclick="currentSlide(5, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Staff Enemy AI during prototype phase">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/GIF_bossai.gif"  onclick="currentSlide(6, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Boss AI during prototype phase">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/enemyaicandlekinboss.gif"  onclick="currentSlide(6, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Boss AI during prototype phase">
 					</div>
 				</div>
 			</section>
 
 
-			<section class ="feature-section">
-			<p class = "feature-info-title">Prototype</p>
-		
+			<section id="rewardsystem" class ="feature-section">
+			<p class = "feature-info-title">Rewards System</p>
+			<p class = "feature-info-detail">We wanted to have a dynamic reward system as the player players further into the game. And with many upgrade options, the system required a lot of checks. First, I had to check all the available rewards that can spawn and I added it into a array. Then, I created a weight system that utilizes maps(dictionaries) so reward rates can be dynamically changed based on player conditions. To spawn rewards, it grabs a certain value within the weights and if the reward that is chosen is within the array of rewards that are available for spawn, it then spawns the rewards. This challenged me a bit because not only did I have to spawn a single reward, but based on difficulty, rooms can spawn multiple rewards and I had to ensure that there are no duplicate rewards.</p>
+			<p class = "feature-info-detail">Once the system was done, I created data assets and added the base values and weights so that designers could easily adjust the values without going into the blueprints.</p>
 			<div id="slideshow2" class="slideshowcontainer">
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/gameplay1.png" style="width:100%" alt="tutorial system">
+					<img src="../projects/Leyline_Knights/images/rewardsystem1.png" style="width:100%" alt="tutorial system">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/gameplay2.png"  style="width:100%">
+					<img src="../projects/Leyline_Knights/images/rewardsystem2.png"  style="width:100%">
 				</div>
 				<div class="slideshow">
-					<img src="../projects/Leyline_Knights/images/gameplay3.png" style="width:100%">
+					<img src="../projects/Leyline_Knights/images/rewardsystem3.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/rewardsystem.gif" style="width:100%">
 				</div>
 
 				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
@@ -173,17 +178,99 @@
 
 				<div class="slideshowrow">
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Worked on AI, I began with first setting up enemy parenting structure is setup correctly and easily expandable in the future. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/rewardsystem1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setup Easy Level Weights based on player conditions (top). Select reward based on availability and weights (bottom). ">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="We decided to use BehaviorTrees and Blackboard.">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/rewardsystem2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Checking what rewards are available (top). Adding available rewards to an array (bottom).">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/gameplay3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using BehaviorTree tasks allowed us to reuse task among mutiple enemies since some functinalities work between most enemies. ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/rewardsystem3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Data Asset for designers to change base weights of reward spawn chances. ">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/rewardsystem.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Rewards system ">
 					</div>
 				</div>
 			</section>
 			
+			<section id="levelgenerator" class ="feature-section">
+			<p class = "feature-info-title">Level Generator / Wave System</p>
+			<p class = "feature-info-detail"> With the game not allowing backtracking and requiring each level to differ from previous level, level generator was quite simple. I used prebuild maps created by designers and placed them in arrays. When each level is loaded in, they set each doors to a different level. Once the door is used, it removes the level from the array so that the level will never be used again. There are couple restrictions in amount of levels before a certain occurance. This is completed by having a integer increment as player move through levels and once that threshold is met, it sets all the doors to that occurance. Levels also have a difficulty rating that changes the enemy tier and element chances during that room. The difficulty is set based on random chance and is set on the doors.</p>
+			<p class = "feature-info-detail"> With difficulty in place, the wave system set weights based on the difficulty. This is similar to the rewards system where it uses weights and adjusts those values based on certain conditions. For element chances, there are base chances and they are adjusted based on the difficulty level. All these information are stored in a data asset so they are easily tweaked. To spawn enemies, it takes the base element weights and added them to the difficulty weights. Then spawns the enemy based on the selected element.</p>
+
+			<div id="slideshow3" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/levelgenerator1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/levelgenerator2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/levelgenerator3.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/levelgenerator.gif" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/levelgenerator1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt=" Getting available levels and setting them to doors and making sure that each door has a different level">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/levelgenerator2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Sets the weight based on difficulty of level (top). Adds base weight to difficulty weight to get a total adjusted weight based on conditions (bottom).">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/levelgenerator3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setting specific rooms once conditions are met.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/levelgenerator.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Level generator">
+					</div>
+				</div>
+			</section>
+
+
+			<section id="achievementsystem" class ="feature-section">
+			<p class = "feature-info-title">Achievement System</p>
+			<p class = "feature-info-detail"> The achievement system was a nice addon to the game as it something players try to achieve besides defeating every boss. I created this system by utilizing data assets and storing all the achievements there. Achievements themselves consist of an array of structs. The struct contains all the information of each achievement such as name, description, type, requirement, tier, etc. When actions are done, they check for the type of action and check if it is an achievement, if so, it increases the achievement values.</p>
+			
+			<div id="slideshow4" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/achievementsystem1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/achievementsystem2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/achievementsystem.gif" style="width:100%">
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Data asset where all achievements are set up. ">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement check if action done pertains to an achievement. (bottom is a continuation of top)">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem.gif"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement System (still in early development) ">
+					</div>
+				</div>
+			</section>
+
 
 	<script src="../css/slideshow.js"></script>
 </body>
