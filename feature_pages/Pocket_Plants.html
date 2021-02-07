@@ -61,10 +61,9 @@
 
 			<section class = feature-section>
 				<p class = "feature-info-title">Summary</p>
-				<p class = "feature-info-detail"> Pocket Plants is a 3rd Person survival game that takes place on a planet overrun with invasive plants. While beautiful, these plants produce too much carbon dioxide to sustain other life on the planet. The player must gather plants and utilize propagation to save their suffocating ecosystem.</p>
+				<p class = "feature-info-detail"> Pocket Plants is a 3rd Person exploration game that takes place on a planet overrun with invasive plants. While beautiful, these plants produce too much carbon dioxide to sustain other life on the planet. The player must gather plants and utilize propagation to save their suffocating ecosystem.</p>
+				<p class = "feature-info-detail"> I joined the team after they had a simple prototype in place. When I joined I worked as the sole programmer for the game. The most challenging portion of the project was creating a persistent save data for the plants. All plants' information needed to be saved after a level is cleared, including plants' location, tier growth, level completion, etc. This was the first time creating such a system, but after hours of testing, it was eventually done. The game was kept simple so we decided to keep everything in blueprints.</p>
 			</section>
-
-
 
 			<section class = feature-section>
 				<p class = "feature-info-title">Format</p>
@@ -85,62 +84,16 @@
 			</section>
 
 			<section class = feature-section>
-				<p class = "feature-info-title">Tasks</p>
+				<p class = "feature-info-title">Contributions</p>
 				<p class = "feature-info-detail"><a href= #tutorialsystem>Tutorial System</a></p>
-				<p class = "feature-info-detail"><a href=#persistentsave>Persistant Save for plant data</a></p>
-				<p class = "feature-info-detail">Plant Growth and Interactions</p>
-				<p class = "feature-info-detail">Dialogue System</p>
-			</section>
-
-
-			<section id="persistentsave" class="feature-section">
-				<p class="feature-info-title">Design</p>
-
-				<div id="slideshow1" class="slideshowcontainer">
-					<div class="slideshow">
-						<img src="../projects/Pocket_Plants/images/GIF_tutorial.gif" style="width:100%" alt="tutorial system">
-					</div>
-					<div class="slideshow">
-						<img src="../projects/Pocket_Plants/images/production3.png"  style="width:100%">
-					</div>
-					<div class="slideshow">
-						<img src="../projects/Pocket_Plants/images/production4.png" style="width:100%">
-					</div>
-
-					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
-					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
-
-					<div class="captioncontainer">
-						<p class="caption"></p>
-					</div>
-
-					<div class="slideshowrow">
-						<div class="slideshowcol">
-							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/GIF_tutorial.gif"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="Created an interactive tutorial system to help player learn how to play the game as well as learn the narative behind the game ">
-						</div>
-						<div class="slideshowcol">
-							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/production3.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Tutorial Dialogue System">
-						</div>
-						<div class="slideshowcol">
-							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/production4.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Plant leveling system">
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-			<section class = "feature-section">
-				<p class = "feature-info-title">Downloads</p>
-				<p class = "feature-info-detail">Available on:
-					<a download target= "blank"class = "feature-downloads">Steam</a>
-				</p>
+				<p class = "feature-info-detail"><a href=#persistentsave>Persistent Save System</a></p>
+				<p class = "feature-info-detail"><a href=#dialoguesystem>Dialogue System</a></p>
 			</section>
 
 			<section id="tutorialsystem" class="feature-section">
 				<p class="feature-info-title">Tutorial System</p>
-
-				<div id="slideshow2" class="slideshowcontainer">
+				<p class = "feature-info-detail"> With restrictions added to the game where players were only allows a single input, a tutorial system was required. We wanted to create a tutorial system where the player could learn how to play the game as well as learn some background narrative. The system was put together requiring player to complete an action to continue the tutorial. This was the most interactive way and best way to learn the game as the controls would be funky. This system was created alongside the Dialogue System as it would explain what the player would need to do to continue the tutorial.</p>
+				<div id="slideshow1" class="slideshowcontainer">
 					<div class="slideshow">
 						<img src="../projects/Pocket_Plants/images/gameplay1.png" style="width:100%" alt="tutorial system">
 					</div>
@@ -171,6 +124,95 @@
 					</div>
 				</div>
 			</section>
+
+
+			<section id="persistentsave" class="feature-section">
+				<p class="feature-info-title">Persistent Save System</p>
+				<p class = "feature-info-detail"> This was the first time I worked on a persistent save information and there were multiple issues that I ran into while working on it. I needed to save data of all the plants on each level (their data, location, etc.) as well as the progression of the level. At first, I tried saving each actor and grabbing the data from the actor. It worked as I tested with a single level, but once saving data from multiple levels, the data would disappear. Later I learned that saving actors is the wrong way to go since actors only persist per level, so once opening another level, the actor would not exist so therefore, there would be no data to read from. Afterwards, I stored each data from the plants into an array of structs which proved to be a much better solution.</p>
+				<div id="slideshow2" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/persistentsave1.png"  style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/persistentsave2.png" style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/persistentsave3.png" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/persistentsave1.png"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="Persistent Save for level completion">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/persistentsave2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Persistent Save for each plant and ther data">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/persistentsave3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Persistent Saving of plant grwoth in Greenhouse">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="dialoguesystem" class="feature-section">
+				<p class="feature-info-title">Dialogue System</p>
+				<p class = "feature-info-detail"> The dialogue system isn't widely used besides being used along side the tutorial. Each dialogue that pops up is being read from a data aseet. This way it is much easier to edit dialogues rather than opening each blueprint within the level. Each data assets consists of an array of strings and a float for the speed of the text.</p>
+				<p class = "feature-info-detail"> There are different types of dialogues. Ones that destroy objects once completed, ones that are activated when overlapped, and ones that override other dialogues when started. Each dialogue type is used in different sections so designers can place them and have them work how they need it. The dialogue system was also created to auto continue after a certain time limit. Since the game was restricted to single input and we wanted the player still be able to navigate the world while in a dialogue interaction, it was best for dialogue to auto continue.</p>
+				<div id="slideshow3" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/dialoguesystem1.png" style="width:100%" alt="tutorial system">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/dialoguesystem2.png"  style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/dialoguesystem3.png" style="width:100%">
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Pocket_Plants/images/dialoguesystem4.png" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/dialoguesystem1.png"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="Data asset that the dialogue system reads from ">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/dialoguesystem2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Overriding other dialogues when dialogues starts so only 1 persists at a time.">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/dialoguesystem3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Dialogue Reading in using a loop that is delayed per loop">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Pocket_Plants/images/dialoguesystem4.png"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Widget reading from the data asset and displaying the string">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class = "feature-section">
+				<p class = "feature-info-title">Downloads</p>
+				<p class = "feature-info-detail">Available on:
+					<a download target= "blank"class = "feature-downloads">Steam</a>
+				</p>
+			</section>
+
+			
 
 	<footer >
 		<p>Design and Created by Tony Chen</p>

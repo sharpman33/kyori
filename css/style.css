@@ -405,7 +405,7 @@ footer
 	.feature-date
 	{
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 1.4em;
 		color: white;
 		opacity: 1;
 		margin-bottom: 5%;
@@ -416,23 +416,26 @@ footer
 	{
 		margin: auto;
 		margin-bottom: 4%;
-
 	}
 
 
 
 	.feature-info-title
 	{
-		font-size: 1.5em;
-		margin:0;
-		color: white;
+		font-size: 1.7em;
+		margin-left:10%;
+		color: #26deff;
+		font-weight: bold;
+		width:90%;
 	}
 
 	.feature-info-detail
 	{
-		padding-left: 35px;
+		margin: auto;
+		width: 80%;
 		color: white;
-		font-size: 1.2em;
+		font-size: 1.4em;
+		line-height: 1.3em;
 		text-align: justify;
 	}
 
@@ -596,8 +599,8 @@ footer
 		text-align: center;
 		color:white;
 		font-style: italic;
-		font-size: 0.8em;
-		height: 0.8em;
+		font-size: 1em;
+		height: 1em;
 		margin:auto;
 	}
 
