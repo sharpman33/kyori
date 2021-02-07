@@ -104,7 +104,7 @@
 			<section id="persistentsave" class="feature-section">
 				<p class="feature-info-title">Persistent Save System</p>
 				<p class = "feature-info-detail"> This was the first time I worked on a persistent save information and there were multiple issues that I ran into while working on it. I needed to save data of all the plants on each level (their data, location, etc.) as well as the progression of the level. At first, I tried saving each actor and grabbing the data from the actor. It worked as I tested with a single level, but once saving data from multiple levels, the data would disappear. Later I learned that saving actors is the wrong way to go since actors only persist per level, so once opening another level, the actor would not exist so therefore, there would be no data to read from. Afterwards, I stored each data from the plants into an array of structs which proved to be a much better solution.</p>
-				<div id="slideshow2" class="slideshowcontainer">
+				<div id="slideshow1" class="slideshowcontainer">
 					<div class="slideshow">
 						<img src="../projects/Pocket_Plants/images/persistentsave1.png"  style="width:100%">
 					</div>
@@ -141,7 +141,7 @@
 				<p class="feature-info-title">Dialogue System</p>
 				<p class = "feature-info-detail"> The dialogue system isn't widely used besides being used along side the tutorial. Each dialogue that pops up is being read from a data aseet. This way it is much easier to edit dialogues rather than opening each blueprint within the level. Each data assets consists of an array of strings and a float for the speed of the text.</p>
 				<p class = "feature-info-detail"> There are different types of dialogues. Ones that destroy objects once completed, ones that are activated when overlapped, and ones that override other dialogues when started. Each dialogue type is used in different sections so designers can place them and have them work how they need it. The dialogue system was also created to auto continue after a certain time limit. Since the game was restricted to single input and we wanted the player still be able to navigate the world while in a dialogue interaction, it was best for dialogue to auto continue.</p>
-				<div id="slideshow3" class="slideshowcontainer">
+				<div id="slideshow2" class="slideshowcontainer">
 					<div class="slideshow">
 						<img src="../projects/Pocket_Plants/images/dialoguesystem1.png" style="width:100%" alt="tutorial system">
 					</div>
@@ -196,7 +196,7 @@
 
 			<section class="feature-section">
 				<p class="feature-info-title">Gameplay Screenshots</p>
-				<div id="slideshow4" class="slideshowcontainer">
+				<div id="slideshow3" class="slideshowcontainer">
 					<div class="slideshow">
 						<img src="../projects/Pocket_Plants/images/gameplay1.png" style="width:100%" alt="tutorial system">
 					</div>
