@@ -96,10 +96,33 @@
 			</section>
 
 
-			<section class = "feature-section">
-				<img src="../projects/Saving_Sprinkles/images/title.png" align = center>
-				<img src="../projects/Saving_Sprinkles/images/gameplay1.png" align = center>
-				<img src="../projects/Saving_Sprinkles/images/gameplay2.png" align = center>
+			<section class="feature-section">
+				<p class="feature-info-title">Gameplay</p>
+				<div id="slideshow1" class="slideshowcontainer">
+					<div class="slideshow">
+						<img src="../projects/Saving_Sprinkles/images/gameplay1.png" style="width:100%"	>
+					</div>
+					<div class="slideshow">
+						<img src="../projects/Saving_Sprinkles/images/gameplay2.png"  style="width:100%">
+					</div>
+
+
+					<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+					<div class="captioncontainer">
+						<p class="caption"></p>
+					</div>
+
+					<div class="slideshowrow">
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Saving_Sprinkles/images/gameplay1.png"  onclick="currentSlide(1,this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+						<div class="slideshowcol">
+							<img class="slideshowthumb cursor" src="../projects/Saving_Sprinkles/images/gameplay2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="">
+						</div>
+					</div>
+				</div>
 			</section>
 
 
@@ -108,6 +131,9 @@
 		<p>Design and Created by Tony Chen</p>
 	</footer>
 
+
+
+	<script src="../css/slideshow.js"></script>
 </body>
 
 
