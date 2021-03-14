@@ -76,11 +76,14 @@
 		</section>
 
 		<section class = feature-section>
-			<p class = "feature-info-title">Tasks</p>
+			<p class = "feature-info-title">My Work</p>
 			<p class = "feature-info-detail"><a href=#enemyai>Enemy AI</a></p>
 			<p class = "feature-info-detail"><a href=#rewardsystem>Reward System</a></p>
 			<p class = "feature-info-detail"><a href=#levelgenerator>Level Generator</a></p>
 			<p class = "feature-info-detail"><a href=#achievementsystem>Achievement System</a></p>
+			<p class = "feature-info-detail"><a >Elemental Effects</a></p>
+			<p class = "feature-info-detail"><a >User Interface</a></p>
+			<p class = "feature-info-detail"><a >Controller Compatibility</a></p>
 
 		</section>
 
@@ -99,8 +102,14 @@
 -->
 		<section id="enemyai" class ="feature-section">
 			<p class = "feature-info-title">Enemy AI</p>
-			<p class = "feature-info-detail">With many enemies in the game, I worked with another programmer to create enemies. Though we both were new to behavior tree during the beginning, I was able to learn quickly and able to help and collaborate with the other programmer to ensure high quality and optimized work. I first began by making sure that all enemies would have a well-structured class inheritance so in the future, it would be much easier to work with.</p>
-			<p class = "feature-info-detail">Each basic enemy has two different tiers. Each tier of enemy has different abilities, and some are casted under certain conditions. This was easily completed using Behavior trees and Blackboard. The most challenging portion is creating the boss. Though some Behavior tree tasks were reused, but majority of them were different. For the boss, since all abilities were chosen by chance, I wanted to create a task that would be reusable on each boss without hard setting the abilities. With all basic functions and behavior tree tasks set up, enemies down the line were much easier to make and were made at a faster rate.</p>
+			<p class = "feature-info-detail">As a Tech Lead, I responsible for setting up all basic AI and implmentation of the first boss that the player encounters during the first biome, Candlekin.</p>
+			<p class = "feature-info-detail">The basic enemies were created with a well-structures inheritance so that future work would be much easier. It was important that the base structure is well structured so when in the future, if we end up adding in more enemies, it would save a lot of time.</p>
+			<p class = "feature-info-detail">For the AI, we used a combinations of blueprints, blackboard, and behavior trees. We tried to go into EQS but after ample testing, we had scrapped that ideas and sticked to just nav meshes.</p>
+			<p class = "feature-info-detail"> This was the first time I worked with Behavior Trees in UE4 which resulted in a slow start, but after working on several base enemies, everything was going much smoother.</p>
+			<p class = "feature-info-detail">Additionally, I implmented the first boss of the game, Galawick. This was the most challenging portion of creating AI. Since all the boss abilities were used by chance, all abilties were given a weight and they were selected by chance based on the weight. This is all set up in a Behavior Tree Task which can be resued on other enemies.</p>
+			<p class = "feature-info-detail">After vertical slice, I moved away from working on AI to other system since we lost two systems programmers.</p>
+
+	
 			<div id="slideshow1" class="slideshowcontainer">
 				<div class="slideshow">
 					<img src="../projects/Leyline_Knights/images/enemyai1.png" style="width:100%" alt="tutorial system">
@@ -153,7 +162,10 @@
 
 			<section id="rewardsystem" class ="feature-section">
 			<p class = "feature-info-title">Rewards System</p>
-			<p class = "feature-info-detail">We wanted to have a dynamic reward system as the player players further into the game. And with many upgrade options, the system required a lot of checks. First, I had to check all the available rewards that can spawn and I added it into a array. Then, I created a weight system that utilizes maps(dictionaries) so reward rates can be dynamically changed based on player conditions. To spawn rewards, it grabs a certain value within the weights and if the reward that is chosen is within the array of rewards that are available for spawn, it then spawns the rewards. This challenged me a bit because not only did I have to spawn a single reward, but based on difficulty, rooms can spawn multiple rewards and I had to ensure that there are no duplicate rewards.</p>
+			<p class = "feature-info-detail">The reward system at first were all random with a single reward spawning per room that the player cleared. This made the game too random where player could get runs with full upgraded elements and other runs where player would purely just get crystals(in-game currecny). This was solved by making each room spawn multiple rewards based on the room difficulty.</p>
+			<p class = "feature-info-detail">Based on the room difficulty, Easy, Normal or Hard, the room would spawn 1, 2, or 3 rewards. This allows the player to make the decision of low quality reward for easier playthrough, or higher quality reward in trade of higher difficulty. This solved a alot of the issues of rewards being too random. But when adding in the second biome, there were a total of 15+ rooms that player could play through which by the end of second biome, the player could already achieve all elemental upgrades majority of the time if player chose normal or hard difficulty rooms. To solve this issue, we scaled and weighed the rewards based on previous rewards that the player recieved. </p>
+			<p class = "feature-info-detail">Each type of reward was give a weight based on the difficulty of the room as well as player's previous rewards. For example, if player has never recieved a Elemental Upgrade and they are already at the third room, the chances of the room spawning an Elemental Upgrade is increased. This would be the same vice versa.</p>
+			<p class = "feature-info-detail">With this new system in, not only did it make achieving all elements easier, but it also increased the value of other upgrades. After implmentation of this system, playing with other upgrades also felt impactful. While before, players would always go for elemental upgrades since 70+ percent of the time, there were elemental upgrade option. </p>
 			<p class = "feature-info-detail">Once the system was done, I created data assets and added the base values and weights so that designers could easily adjust the values without going into the blueprints.</p>
 			<div id="slideshow2" class="slideshowcontainer">
 				<div class="slideshow">
