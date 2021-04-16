@@ -63,14 +63,14 @@
 		<section class = feature-section>
 			<p class = "feature-info-title">Summary</p>
 			<p class = "feature-info-detail">Leyline Knights is a top-down 3D action roguelike game. Player controls a magic-wielding knight and climb the Great World Tree in search of powerful magic to help your sick sibling. Player battles through randomly ordered room encounters and acquire elemental upgrades to aid in their climb. </p>
-			<p class = "feature-info-detail">The most challenging part of the project is working with a team of 16. Though the team started off as 3, we slowly grew a total of 16. This is my first time working on a team this large. The project began during a semester where I worked majority on AI with another team member. But when the second semester began, we lost 2 systems programmers, so I shifted to work on back end systems to fill in the gap.</p>
+			<p class = "feature-info-detail">The most challenging part of the project is working with a team of 16. Though the team started off as 3, we slowly grew a total of 16. This is my first time working on a team this large. The project began with me working majority on AI with another team member. But in the later stages of the project, we lost 2 systems programmers, so we had to cut scope and I shifted to work on back end systems to fill in the gap.</p>
 		</section>
 
 		<section class = feature-section>
 			<p class = "feature-info-title">Format</p>
 			<p class = "feature-info-detail">Game Engine: Unreal Engine 4</p>
 			<p class = "feature-info-detail">Team Size: Fourteen</p>
-			<p class = "feature-info-detail">Development Time: 2 Semesters</p>
+			<p class = "feature-info-detail">Development Time: 8 months</p>
 		</section>
 
 
@@ -81,30 +81,17 @@
 		</section>
 
 		<section class = feature-section>
-			<p class = "feature-info-title">My Work</p>
+			<p class = "feature-info-title">My Contributions</p>
 			<p class = "feature-info-detail"><a href=#enemyai>Enemy AI</a></p>
 			<p class = "feature-info-detail"><a href=#rewardsystem>Reward System</a></p>
 			<p class = "feature-info-detail"><a href=#levelgenerator>Level Generator</a></p>
 			<p class = "feature-info-detail"><a href=#achievementsystem>Achievement System</a></p>
-			<p class = "feature-info-detail"><a >Elemental Effects</a></p>
-			<p class = "feature-info-detail"><a >User Interface</a></p>
-			<p class = "feature-info-detail"><a >Controller Compatibility</a></p>
-
+			<p class = "feature-info-detail"><a href=#elementaleffects>Elemental Effects</a></p>
+			<p class = "feature-info-detail"><a href=#userinterface>User Interface</a></p>
+			<p class = "feature-info-detail"><a href=#controllercompatibility>Controller Compatibility</a></p>
 		</section>
 
-		<section class = "feature-section">
-			<p class = "feature-info-title">Design</p>
-			<p class = "feature-info-detail"> As tech lead, I oversee all programming tasks and ensure that all tasks are working properly and easily integrated for designers to use.</p>
-		</section>
 
-<!--
-		<section class = "feature-section">
-			<p class = "feature-info-title">Downloads</p>
-			<p class = "feature-info-detail">Current Versions:
-				<a href="https://kyori.itch.io/hungry-for-burger" download target= "blank"class = "feature-downloads">Itch.io</a>
-			</p>
-		</section>
--->
 		<section id="enemyai" class ="feature-section">
 			<p class = "feature-info-title">Enemy AI</p>
 			<p class = "feature-info-detail">As a Tech Lead, I responsible for setting up all basic AI and implmentation of the first boss that the player encounters during the first biome, Candlekin.</p>
@@ -172,6 +159,7 @@
 			<p class = "feature-info-detail">Each type of reward was give a weight based on the difficulty of the room as well as player's previous rewards. For example, if player has never recieved a Elemental Upgrade and they are already at the third room, the chances of the room spawning an Elemental Upgrade is increased. This would be the same vice versa.</p>
 			<p class = "feature-info-detail">With this new system in, not only did it make achieving all elements easier, but it also increased the value of other upgrades. After implmentation of this system, playing with other upgrades also felt impactful. While before, players would always go for elemental upgrades since 70+ percent of the time, there were elemental upgrade option. </p>
 			<p class = "feature-info-detail">Once the system was done, I created data assets and added the base values and weights so that designers could easily adjust the values without going into the blueprints.</p>
+
 			<div id="slideshow2" class="slideshowcontainer">
 				<div class="slideshow">
 					<img src="../projects/Leyline_Knights/images/rewardsystem1.png" style="width:100%" alt="tutorial system">
@@ -209,6 +197,7 @@
 				</div>
 			</section>
 			
+
 			<section id="levelgenerator" class ="feature-section">
 			<p class = "feature-info-title">Level Generator / Wave System</p>
 			<p class = "feature-info-detail"> With the game not allowing backtracking and requiring each level to differ from previous level, level generator was quite simple. I used prebuilt maps created by designers and placed them in arrays. When each level is loaded in, they set each door to a different level. Once the door is used, it removes the level from the array so that the level will never be used again. There are couple restrictions in amount of levels before a certain occurrence. This is completed by having a integer increment as player move through levels and once that threshold is met, it sets all the doors to that occurrence. Levels also have a difficulty rating that changes the enemy tier and element chances during that room. The difficulty is set based on random chance and is set on the doors.</p>
@@ -266,6 +255,9 @@
 				<div class="slideshow">
 					<img src="../projects/Leyline_Knights/images/achievementsystem.gif" style="width:100%">
 				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/achievementsystem1.gif" style="width:100%">
+				</div>
 
 
 				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
@@ -283,11 +275,165 @@
 						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement check if action done pertains to an achievement. (bottom is a continuation of top)">
 					</div>
 					<div class="slideshowcol">
-						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem.gif"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement System (still in early development) ">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem.gif"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement System">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/achievementsystem1.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Achievement Completed Popup">
 					</div>
 				</div>
 			</section>
 
+
+			<section id="elementaleffects" class ="feature-section">
+			<p class = "feature-info-title">Elemental Effects System</p>
+			<p class = "feature-info-detail">Elemental effects is a core system for combat. We have four different elemental effects (burn, shock, chill, and gust) with each performing different effects. All characters that are affected by elemental effects hold a actor component. Whenever a character is dealt damage with attack that applies elemental effects, it searches for the actor component and deals the effect through that component.</p>
+			<p class = "feature-info-detail">For attacks that deal elemental effects, I created a function library for actors and had functions that create the damage type along with a function to change the damage of the effects. This is used since enemies and player take different amount of damage based on the effects.</p>
+			
+			<div id="slideshow5" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/elementaleffects1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/elementaleffects2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/elementaleffects3.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/elementaleffects.gif" style="width:100%">
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/elementaleffects1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Function library functions that are used across all usage of Elemental Effects. ">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/elementaleffects2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Applying elemental effect based on the damage type passed through.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/elementaleffects3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Applying Fire status effect (burn) ">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/elementaleffects.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Application of burn on enemies">
+					</div>
+				</div>
+			</section>
+
+
+			<section id="userinterface" class ="feature-section">
+			<p class = "feature-info-title">User Interface</p>
+			<p class = "feature-info-detail">Another core system I worked on was putting together majority of the User Interface. After getting all the UI in the engine, one of the key things that were added was dynamic informational text and tooltip of elemental effects. Information texts are useful so players can understand what each upgrade does to their abilities as well as know what each upgrade does if they are recieving it for the first time. To do this, I created a function library to hold all the data and widgets would just call it to pull the information without having to connect all the information in each widget.</p>
+			<p class = "feature-info-detail">I also worked in getting correct information to show up based on if player is using keyboard or controller. For this, I utilized Rich Textboxes and Decorators. Since this is used across multiple widgets, I also created a function in the function library to get and assign the correct decorators based on the instance it is being called.</p>
+			
+			<div id="slideshow6" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface3.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface4.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface5.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/userinterface.gif" style="width:100%">
+				</div>
+
+
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setup of elemental upgrade UI.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Creation of tooltip displaying effects that the upgrade will have.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setting dynamic details based on current upgrades the player holds.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface4.png"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Using decorators to place in image based on input type">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface5.png"  onclick="currentSlide(5, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setting the style of widget">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/userinterface.gif"  onclick="currentSlide(6, this.parentNode.parentNode.parentNode)" style="width:100%" alt="User interface for wardrobe outfits and trinkets">
+					</div>
+				</div>
+			</section>
+
+
+			<section id="controllercompatibility" class ="feature-section">
+			<p class = "feature-info-title">Controller Compatibility</p>
+			<p class = "feature-info-detail">This is my first time working with adding full Xbox controller support for a game and I proved to be a challenge. We also wanted seamless support from switching between controller and keyboard. With things like auto hiding mouse cursor and auto selected the correct options when switching between controller and keyboard took me a long to figure out.</p>
+			<p class = "feature-info-detail">To do this,in each widget, I created an array of all the widgets that are focusable, and based on the input, the widget either finds a widget to focus and set the image or brush of the widget or just put the image or brush to default if it is keyboard input.</p>
+			
+			<div id="slideshow7" class="slideshowcontainer">
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/controllercompatibility1.png" style="width:100%" alt="tutorial system">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/controllercompatibility2.png"  style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/controllercompatibility3.png" style="width:100%">
+				</div>
+				<div class="slideshow">
+					<img src="../projects/Leyline_Knights/images/controllercompatibility.gif" style="width:100%">
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1, this.parentNode)"><p>&#10094;</p></a>
+				<a class="next" onclick="plusSlides(1, this.parentNode)"><p>&#10095;</p></a>
+
+				<div class="captioncontainer">
+					<p class="caption"></p>
+				</div>
+
+				<div class="slideshowrow">
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/controllercompatibility1.png"  onclick="currentSlide(1, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Setting up all focusable buttons.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/controllercompatibility2.png"  onclick="currentSlide(2, this.parentNode.parentNode.parentNode)" style="width:100%" alt="When button is pressed, checking if it was controller input and if so, find a widget to focus based on the direction of controller input.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/controllercompatibility3.png"  onclick="currentSlide(3, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Checking if focusable widgets is focused and setting cursor.">
+					</div>
+					<div class="slideshowcol">
+						<img class="slideshowthumb" src="../projects/Leyline_Knights/images/controllercompatibility.gif"  onclick="currentSlide(4, this.parentNode.parentNode.parentNode)" style="width:100%" alt="Switching between controller and keyboard/mouse during UI interaction.">
+					</div>
+				</div>
+			</section>
+
+			<section class = "feature-section">
+				<p class = "feature-info-title">Downloads</p>
+				<p class = "feature-info-detail">Alpha Version Available on:
+					<a download href="https://mega.nz/file/bdtCQZ5b#N60MJvdG-QzVUkHdHg491ZGMSe8o5fm8VwhHtQ2zpsc" target= "blank"class = "feature-downloads">Mega.nz</a>
+				</p>
+			</section>
 
 	<script src="../css/slideshow.js"></script>
 </body>

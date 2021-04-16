@@ -20,6 +20,22 @@ var slideshow5 = document.getElementById("slideshow5");
 slideshow5.currentSlideIndex = 1;
 showSlides(slideshow5.currentSlideIndex, slideshow5);
 
+var slideshow6 = document.getElementById("slideshow6");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+var slideshow7 = document.getElementById("slideshow7");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
+
+var slideshow8 = document.getElementById("slideshow8");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+
+
+
+
 function plusSlides(n, slideshow)
 {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
